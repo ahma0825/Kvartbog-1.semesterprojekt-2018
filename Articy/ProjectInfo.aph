@@ -1,0 +1,19 @@
+<ProjectInfo Version="1">
+  <Signature>35F57436E22810925DEE91188F66413AB67EC1B8E8F0CC0020ADBEC78B7DEF0A</Signature>
+  <Content>
+    <Project Guid="2992ed29-3b34-4627-a309-e7e16e7e4fbc">
+      <DisplayName Value="Gruppe 29 Projekt"/>
+      <DetailName Value=""/>
+      <MainProjectGuid Value="bf20cc5d-83a3-4d40-86c4-52af74440191"/>
+      <IconType Value="0"/>
+      <IdProjectIcon Value="00000000-0000-0000-0000-000000000000"/>
+      <ScmProviderGuid Value="0745c2ee-abe3-451b-934e-7f597f56c0d7"/>
+      <ScmConfiguration Value=""/>
+      <CreationTimeStamp Value="636728566657808737"/>
+      <PartitionHash Value="12EEC2708FCA5FDF3F12F3932C926BFD5E65623D0E97762DD4964EAE59587759"/>
+      <SaveFileVersion Value="45"/>
+      <ProjectType Value="0"/>
+      <IsOnlineProject Value="False"/>
+    </Project>
+  </Content>
+</ProjectInfo>
