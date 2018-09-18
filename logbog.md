@@ -28,10 +28,26 @@ Forberedelse: Vejledermøde
 
 Dagsorden: Papirarbejde
 
-Tilstede: Frederik, Kim, Jesper, Saq, Ahmed, Anwar
+Tilstede: Frederik, Kim, Jesper, Saq, Ahmad og Anwar
 
 Referent: Jesper
 
 #### Referat:
 
 Vi startede med at blive enige om og skrive vores Gruppekontrakt. Herefter fik vi sat en Github op så vi kunne få styr på vores filer og Logbook. Anwar kom grundet stor forvirring for sent. Vi fik herefter startet på en Vejlederkontrakt og vi fandt ud af en simpel tematik til vores spil. Der blev også sat en Discord Server op, så vi kan skrive med hinanden direkte. Vi har også aftalt nogle spørgsmål til næste møde med Erik.
+
+## Logbog uge 38
+### Tirsdag - Vejledermøde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00-??:??
+
+Dagsorden: Snak med Erik, danne spil historien, krav til spil
+
+Referent: Ahmad
+
+Tilstede: Erik, Frederik, Kim, Jesper, Saq og Ahmad
+
+#### Referat
+Vi mødte op kl 10:00 og havde en dialog med Erik til kl 11:00. Derefter blev vi enige om at bruge programmet som Jesper tidligere har brugt "articy", hvilket vi har gjort brug af for at have historiens start og slut i orden.
