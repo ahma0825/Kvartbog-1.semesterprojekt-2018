@@ -1,6 +1,6 @@
 # Vejlederkontrakt
 
-Vi skal kontakte Erik senest dagen før, kl. 16:00, om hvad vi har planer om at snakke med ham om til vejledermødet der er planlagt. 
+Vi skal kontakte Erik senest dagen før, kl. 16:00, om hvad vi har planer om at snakke med ham om til vejledermødet der er planlagt.  Det skal foregå via email, som skal sendes ud til alle gruppens medlemmer. 
 
 ## Undervisningsperiode:
 
@@ -12,7 +12,7 @@ Erik Sørensen
 
 ## Faglige forudsætninger:
 
-objektorienteret programmering(OOP)
+Objektorienteret programmering(OOP)
 
 Problemorienteret projektarbejde
 
