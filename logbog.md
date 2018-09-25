@@ -51,3 +51,19 @@ Tilstede: Erik, Frederik, Kim, Jesper, Saq og Ahmad
 
 #### Referat
 Vi mødte op kl 10:00 og havde en dialog med Erik til kl 11:00. Derefter blev vi enige om at bruge programmet som Jesper tidligere har brugt "articy", hvilket vi har gjort brug af for at have historiens start og slut i orden.
+
+## Logbog uge 39
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:30 – 14:00
+
+Dagsorden: Gennemgå det vi lavede sidste gang med Erik og komme videre med projektet
+
+Referent: Kim
+
+Tilstede: Erik, Frederik, Jesper, Saq, Kim
+
+#### Referat
+Vi rettede vejlederaftalen ud fra det feedback, vi fik fra Erik ved sidste møde. Vi snakkede lidt med Erik om, hvordan vi skulle gå fremad med projektet efter udlevering World of Zuul. Vi viste Erik vores foreløbige ide, som vi lavede sidste gang, hvor vi havde opbygget vores verden med rum og lidt historie. Derefter gennemgik vi postersession, kikkede på poster skabelonen og fandt billeder til vores egen poster. Til sidst gik vi i gang med vores projektgrundlag, hvor vi fik lavet udkast til titelbladet.
