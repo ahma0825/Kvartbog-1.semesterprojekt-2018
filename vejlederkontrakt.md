@@ -1,6 +1,6 @@
 # Vejlederkontrakt
 
-Vi skal kontakte Erik senest dagen før, kl. 16:00, hvis vi har noget vi vil snakke med ham om til et vejledermøde. 
+Vi skal kontakte Erik senest dagen før, kl. 16:00, om hvad vi har planer om at snakke med ham om til vejledermødet der er planlagt. 
 
 ## Undervisningsperiode:
 
