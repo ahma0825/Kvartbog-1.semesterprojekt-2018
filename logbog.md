@@ -63,7 +63,7 @@ Dagsorden: Gennemgå det vi lavede sidste gang med Erik og komme videre med proj
 
 Referent: Kim
 
-Tilstede: Erik, Frederik, Jesper, Saq, Kim
+Tilstede: Erik, Frederik, Jesper, Saq og Kim
 
 #### Referat
-Vi rettede vejlederaftalen ud fra det feedback, vi fik fra Erik ved sidste møde. Vi snakkede lidt med Erik om, hvordan vi skulle gå fremad med projektet efter udlevering World of Zuul. Vi viste Erik vores foreløbige ide, som vi lavede sidste gang, hvor vi havde opbygget vores verden med rum og lidt historie. Derefter gennemgik vi postersession, kikkede på poster skabelonen og fandt billeder til vores egen poster. Til sidst gik vi i gang med vores projektgrundlag, hvor vi fik lavet udkast til titelbladet.
+Vi rettede vejlederaftalen ud fra det feedback, vi fik fra Erik ved sidste møde. Vi snakkede lidt med Erik om, hvordan vi skulle gå fremad med projektet efter udlevering World of Zuul. Vi viste Erik vores foreløbige ide, som vi lavede sidste gang, hvor vi havde opbygget vores verden med rum og lidt historie. Derefter gennemgik vi postersession, kikkede på poster skabelonen og fandt billeder til vores egen poster. Til sidst gik vi i gang med vores projektgrundlag, hvor vi fik lavet et udkast til titelbladet.
