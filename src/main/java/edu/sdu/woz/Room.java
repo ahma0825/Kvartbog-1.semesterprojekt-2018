@@ -1,4 +1,4 @@
-package worldofzuul;
+package edu.sdu.woz;
 
 import java.util.Set;
 import java.util.HashMap;
