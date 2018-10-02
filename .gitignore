@@ -2,3 +2,6 @@
 /.idea/
 /build/
 /.nb-gradle/
+nbproject/build-impl.xml
+nbproject/genfiles.properties
+nbproject/private/private.properties
