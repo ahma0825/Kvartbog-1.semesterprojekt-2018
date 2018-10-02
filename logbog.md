@@ -83,7 +83,7 @@ Referent: Saqlain
 
 Tilstede: Erik, Frederik, Kim, Jesper, Saq, Ahmed (Videochat)
 
-####Referat
+#### Referat
 Vi mødtes med Erik lidt tidligere end forventet. Vi snakkede lidt om gradle plugin og blev enige om ikke at bruge den. Vi snakkede om postersessionen og fik styr på nogle ting omkring fremlæggelsen. 
 Snakkede omkring det mulige problem vi kunne opstille til vores problemformulering. Kom igennem hvad der skulle op på vores poster, såsom tidsplan, metoder og problem. 
 
