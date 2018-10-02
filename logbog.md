@@ -91,7 +91,7 @@ Snakkede omkring det mulige problem vi kunne opstille til vores problemformuleri
 
 Sted: Ø27-605-2
 
-Tidspunkt: 10:15-xxxx
+Tidspunkt: 10:15-15:10
 
 Forberedelse: Se på World of Zuul kildekode.
 
