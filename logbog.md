@@ -67,3 +67,42 @@ Tilstede: Erik, Frederik, Jesper, Saq og Kim
 
 #### Referat
 Vi rettede vejlederaftalen ud fra det feedback, vi fik fra Erik ved sidste møde. Vi snakkede lidt med Erik om, hvordan vi skulle gå fremad med projektet efter udlevering World of Zuul. Vi viste Erik vores foreløbige ide, som vi lavede sidste gang, hvor vi havde opbygget vores verden med rum og lidt historie. Derefter gennemgik vi postersession, kikkede på poster skabelonen og fandt billeder til vores egen poster. Til sidst gik vi i gang med vores projektgrundlag, hvor vi fik lavet et udkast til titelbladet.
+
+## Logbog uge 40
+### Tirsdag - Vejledermøde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 11:40-12:05
+
+Forberedelse: Sendt nogle enkelte spørgsmål og kiggede lidt på World of Zuul
+
+Dagsorden: Vi fik svar på spg vi sendte med mail og stillede også nogen omkring postersessionen.
+
+Referent: Saqlain
+
+Tilstede: Erik, Frederik, Kim, Jesper, Saq, Ahmed (Videochat)
+
+####Referat
+Vi mødtes med Erik lidt tidligere end forventet. Vi snakkede lidt om gradle plugin og blev enige om ikke at bruge den. Vi snakkede om postersessionen og fik styr på nogle ting omkring fremlæggelsen. 
+Snakkede omkring det mulige problem vi kunne opstille til vores problemformulering. Kom igennem hvad der skulle op på vores poster, såsom tidsplan, metoder og problem. 
+
+### Tirsdag - Projektarbejde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:15-xxxx
+
+Forberedelse: Se på World of Zuul kildekode.
+
+Dagsorden: Gennemgå world of Zuul kildekode. Og arbejde på poster.
+
+Tilstede: Frederik, Kim, Jesper, Saq, Ahmad (Videochat).
+
+Referent: Saqlain
+
+#### Referat:
+Vi startede dagen med at få styr på at alle havde adgang til World of Zuul kildekoden. Ahmad var med på videochat grundet problemer med ungdomskort. Vi satte en bærbar op til storskærmen i projektlokalet for at kigge på kildekoden.
+Frederik arbejdede også lidt med en gradle plugin for at netbeans gad og virke på hans computer som køre Linux. Vi blev også lidt mere fortrolige med Github Desktop.
+Efter Erik gik og vi fik noget mere styr på de forskellige elementer i vores projekt gik vi i gang med at lave posteren og arbejdede alle på den. Vi fandt frem til et muligt problem som vi kunne arbejde videre med, men var ikke helt sikre på det. Vi blev nogenlunde færdige med et udkast til en problemanalyse, vores problemformulering, fik skrevet en introduktion og en tidsplan til det hele og til slut skrev vi de metoder og værktøjer vi har og vil bruge i vores projekt. 
+
