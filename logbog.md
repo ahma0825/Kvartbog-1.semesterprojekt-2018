@@ -127,3 +127,27 @@ Referent: Frederik
 #### Referat:
 
 Vi brugte hele dagen på at færdiggøre vores poster samt vores projektgrundlag. Mens vi skrev projektgrundlaget besluttede vi os, at omskrive vores problemformulering. Projektgrundlaget blev originalt skrevet i Google Docs, men blev konverteret til LaTeX. 
+
+
+Logbog uge 44
+
+### Tirsdag - Vejledermøde
+Erik mødte op til vores vejledermøde kl 11:20-11:50.
+Vi snakkede med Erik omkring Interfaces, vores projektgrundlag og vores problem som skulle omdefineres.
+
+### Tirsdag - Projektarbejde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00-15:00
+
+Dagsorden: Vi arbejdede videre på vores projektgrundlag samt kodning.
+
+Tilstede: Ahmad, Frederik, Kim, Jesper og Saq.
+
+Referent: Ahmad
+
+#### Referat:
+
+Vi brugte hele dagen på at arbejde på vores spil, hvor vi begyndte småt med kodning. Vi skabte "roomclassen" og facade-interface. 
+Vi besluttede os for at ændre på vores problemformulering, til at vi kunne få en bedre udarbejdet rapport.
