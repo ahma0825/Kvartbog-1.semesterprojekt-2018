@@ -129,7 +129,7 @@ Referent: Frederik
 Vi brugte hele dagen på at færdiggøre vores poster samt vores projektgrundlag. Mens vi skrev projektgrundlaget besluttede vi os, at omskrive vores problemformulering. Projektgrundlaget blev originalt skrevet i Google Docs, men blev konverteret til LaTeX. 
 
 
-## Logbog uge 44
+## Logbog uge 43
 
 ### Tirsdag - Vejledermøde
 Erik mødte op til vores vejledermøde kl 11:20-11:50.
