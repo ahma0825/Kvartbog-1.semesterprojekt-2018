@@ -106,3 +106,24 @@ Vi startede dagen med at få styr på at alle havde adgang til World of Zuul kil
 Frederik arbejdede også lidt med en gradle plugin for at netbeans gad og virke på hans computer som køre Linux. Vi blev også lidt mere fortrolige med Github Desktop.
 Efter Erik gik og vi fik noget mere styr på de forskellige elementer i vores projekt gik vi i gang med at lave posteren og arbejdede alle på den. Vi fandt frem til et muligt problem som vi kunne arbejde videre med, men var ikke helt sikre på det. Vi blev nogenlunde færdige med et udkast til en problemanalyse, vores problemformulering, fik skrevet en introduktion og en tidsplan til det hele og til slut skrev vi de metoder og værktøjer vi har og vil bruge i vores projekt. 
 
+## Logbog uge 41
+
+### Tirsdag - Vejledermøde
+
+Aflyst pga. postersession.
+
+### Tirsdag - Projektarbejde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00-16:00
+
+Dagsorden: Færddigørelse af poster
+
+Tilstede: Frederik, Kim, Jesper, Saq.
+
+Referent: Frederik
+
+#### Referat:
+
+Vi brugte hele dagen på at færdiggøre vores poster samt vores projektgrundlag. Mens vi skrev projektgrundlaget besluttede vi os, at omskrive vores problemformulering. Projektgrundlaget blev originalt skrevet i Google Docs, men blev konverteret til LaTeX. 
