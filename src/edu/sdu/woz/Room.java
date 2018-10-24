@@ -20,7 +20,7 @@ public abstract class Room {
     }
     
     public abstract String examine();
- 
+
     public boolean canGo(Direction direction){
         Point point = new Point(
                 pos.x + direction.getDelta().x,
@@ -29,15 +29,5 @@ public abstract class Room {
         return game.getRoom(point) != null;
     }
     
-    public Room go(Direction direction){
-        if (!canGo(direction)) { return null; }
-        
-        Point point = new Point(
-            pos.x + direction.getDelta().x,
-            pos.y + direction.getDelta().y );
-
-        Room room = game.getRoom(point);
-        game.enterRoom(room);
-        return room;
-    }
+    
 }

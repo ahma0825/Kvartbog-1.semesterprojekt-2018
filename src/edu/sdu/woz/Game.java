@@ -1,16 +1,18 @@
 package edu.sdu.woz;
 
+import edu.sdu.woz.facade.IFacade;
+import edu.sdu.woz.facade.TextFacade;
 import java.awt.Point;
 import java.util.HashMap;
 
 public class Game {
-    private Parser parser;
     private Room currentRoom;
     private final HashMap<Point, Room> map = new HashMap<>();
+    private final IFacade facade;
 
 
-    public Game() {
-        parser = new Parser();
+    public Game(TextFacade tf) {
+        facade = tf;
     }
 
     public HashMap<Point, Room> getMap() {
@@ -27,21 +29,21 @@ public class Game {
     
     public void enterRoom(Room room){
         currentRoom = room;
+        facade.onRoomEnter(room);
     }
     
-    
-    public void play() {
-        //printWelcome();
+    public Room go(Direction direction){
+        if (!currentRoom.canGo(direction)) { return null; }
+        
+        Point point = new Point(
+            currentRoom.getPosition().x + direction.getDelta().x,
+            currentRoom.getPosition().y + direction.getDelta().y );
 
-
-        boolean finished = false;
-        while (!finished) {
-            Command command = parser.getCommand();
-            //finished = processCommand(command);
-        }
-        System.out.println("Thank you for playing.  Good bye.");
+        Room room = getRoom(point);
+        enterRoom(room);
+        return room;
     }
-
+    
     private boolean quit(Command command) {
         if (command.hasSecondWord()) {
             System.out.println("Quit what?");
