@@ -1,6 +1,7 @@
 package edu.sdu.woz.facade;
 
 import edu.sdu.woz.*;
+import edu.sdu.woz.room.Room;
 
 import java.io.IOException;
 import java.util.List;

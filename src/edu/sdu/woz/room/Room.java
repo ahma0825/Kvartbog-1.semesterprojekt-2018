@@ -1,4 +1,8 @@
-package edu.sdu.woz;
+package edu.sdu.woz.room;
+
+import edu.sdu.woz.Direction;
+import edu.sdu.woz.Game;
+import edu.sdu.woz.Item;
 
 import java.awt.*;
 import java.util.ArrayList;

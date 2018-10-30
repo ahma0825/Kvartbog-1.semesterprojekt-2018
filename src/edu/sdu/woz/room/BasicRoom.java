@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.sdu.woz;
+package edu.sdu.woz.room;
+
+import edu.sdu.woz.Game;
 
 import java.awt.Point;
 
@@ -11,16 +13,15 @@ import java.awt.Point;
  *
  * @author jesperisgaard
  */
-public class ItemRoom extends Room {
+public class BasicRoom extends Room {
 
     private String description;
 
-    public ItemRoom(Game game, Point pos) {
+    public BasicRoom(Game game, Point pos, String description) {
         super(game, pos);
+        this.description = description;
     }
 
-    
-    
     @Override
     public String examine() {
         return description;
