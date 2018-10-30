@@ -13,13 +13,16 @@ import java.awt.Point;
  */
 public class EmptyRoom extends Room {
 
-    public EmptyRoom(Game game, Point pos) {
+    private String description;
+
+    public EmptyRoom(Game game, Point pos, String description) {
         super(game, pos);
+        this.description = description;
     }
     
     @Override
     public String examine(){
-        return "This room does not include anything that can be examined";
+        return description;
     }
     
     

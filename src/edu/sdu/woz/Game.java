@@ -18,7 +18,16 @@ public class Game {
         facade = tf;
 
         // Entrance
-        putRoom(new EmptyRoom(this, new Point(0,0)));
+        putRoom(new EmptyRoom(this, new Point(0,0),
+                "You find yourself standing in a grand entrance."
+        ));
+
+        // Hallway
+        putRoom(new EmptyRoom(this, new Point(0,1),
+                "This is some hallway."
+        ));
+
+        currentRoom = map.get(new Point(0, 0));
     }
 
     private void putRoom(Room room) {
