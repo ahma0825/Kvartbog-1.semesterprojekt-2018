@@ -1,4 +1,7 @@
-package edu.sdu.woz;
+package edu.sdu.woz.facade;
+
+import edu.sdu.woz.Command;
+import edu.sdu.woz.CommandWords;
 
 import java.util.Scanner;
 
@@ -18,7 +21,29 @@ public class Parser {
 
         System.out.print("> ");
 
-        inputLine = reader.nextLine();
+        inputLine = reader.nextLine().trim();
+
+        switch (inputLine) {
+            case "n":
+            case "north":
+                inputLine = "go north";
+                break;
+            case "w":
+            case "west":
+                inputLine = "go west";
+                break;
+            case "s":
+            case "south":
+                inputLine = "go south";
+                break;
+            case "e":
+            case "east":
+                inputLine = "go east";
+                break;
+            case "inv":
+                inputLine = "inventory";
+                break;
+        }
 
         Scanner tokenizer = new Scanner(inputLine);
         if (tokenizer.hasNext()) {
