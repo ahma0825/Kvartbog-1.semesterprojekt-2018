@@ -42,9 +42,9 @@ public class Game {
         // Bathroom~
         putRoom(new BasicRoom(this, new Point(2, -1), "Bathroom").setDirections(NORTH, EAST));
         // Darkroom~
-        putRoom(new BasicRoom(this, new Point(3, 1), "Dark Room").setDirections(SOUTH, WEST));
-        // Sideroom2~
-        putRoom(new BasicRoom(this, new Point(3, -1), "SideRoom2").setDirections(NORTH, WEST));
+        putRoom(new BasicRoom(this, new Point(3, 1), "Darkroom").setDirections(SOUTH, WEST));
+        // Ritualroom~
+        putRoom(new BasicRoom(this, new Point(3, -1), "Ritualroom").setDirections(NORTH, WEST));
 
         currentRoom = map.get(new Point(0, 0));
         facade.onRoomEnter(currentRoom);
