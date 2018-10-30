@@ -21,11 +21,29 @@ public class Game {
                 "You find yourself standing in a grand entrance. There's a hallway to the North."
         ));
 
-        // Hallway
-        putRoom(new EmptyRoom(this, new Point(0,1),
-                "This is some hallway. There are walls ahead of you and to both your sides. The only way is back."
-        ));
-
+        // End Room~
+        putRoom(new EmptyRoom(this, new Point(-1,0),"End Room"));
+        // Dining Room~
+        putRoom(new EmptyRoom(this, new Point(1,0),"Dining Room"));
+        // Room
+        putRoom(new EmptyRoom(this, new Point(2,0),"Room"));
+        // Kitchen~
+        putRoom(new EmptyRoom(this, new Point(3,0),"Kitchen"));
+        // Sideroom
+        putRoom(new EmptyRoom(this, new Point(1,1),"SideRoom"));
+        // Basement~
+        putRoom(new EmptyRoom(this, new Point(-1,1),"Basement"));
+        // Ghostroom~
+        putRoom(new EmptyRoom(this, new Point(2,2),"Ghostroom"));
+        // Office~
+        putRoom(new EmptyRoom(this, new Point(2,1),"Office"));
+        // Bathroom~
+        putRoom(new EmptyRoom(this, new Point(2,-1),"Bathroom"));
+        // Dark Room~
+        putRoom(new EmptyRoom(this, new Point(3,1),"Dark Room"));
+        // Dining Room
+        putRoom(new EmptyRoom(this, new Point(3,-1),"Room"));
+                
         currentRoom = map.get(new Point(0, 0));
         facade.onRoomEnter(currentRoom);
     }
