@@ -1,7 +1,5 @@
 package edu.sdu.woz;
 
-import static edu.sdu.woz.Direction.*;
-
 import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.Room;
 
@@ -9,6 +7,8 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static edu.sdu.woz.Direction.*;
 
 public class Game {
     private Room currentRoom;
@@ -20,32 +20,32 @@ public class Game {
         facade = tf;
 
         // Entrance
-        putRoom(new BasicRoom(this, new Point(0,0),
+        putRoom(new BasicRoom(this, new Point(0, 0),
                 "You find yourself standing in a grand entrance. There's a hallway to the north."
-        ).setDirections(EAST,WEST));
+        ).setDirections(EAST, WEST));
         // End Room~
-        putRoom(new BasicRoom(this, new Point(-1,0),"End Room").setDirections(EAST));
+        putRoom(new BasicRoom(this, new Point(-1, 0), "End Room").setDirections(EAST));
         // Dining Room~
-        putRoom(new BasicRoom(this, new Point(1,0),"Dining Room").setDirections(NORTH,EAST,SOUTH,WEST));
+        putRoom(new BasicRoom(this, new Point(1, 0), "Dining Room").setDirections(NORTH, EAST, SOUTH, WEST));
         // Room
-        putRoom(new BasicRoom(this, new Point(2,0),"Room").setDirections(EAST,SOUTH,WEST));
+        putRoom(new BasicRoom(this, new Point(2, 0), "Room").setDirections(EAST, SOUTH, WEST));
         // Kitchen~
-        putRoom(new BasicRoom(this, new Point(3,0),"Kitchen").setDirections(NORTH,SOUTH,WEST));
+        putRoom(new BasicRoom(this, new Point(3, 0), "Kitchen").setDirections(NORTH, SOUTH, WEST));
         // Sideroom
-        putRoom(new BasicRoom(this, new Point(1,1),"SideRoom").setDirections(EAST,SOUTH));
+        putRoom(new BasicRoom(this, new Point(1, 1), "SideRoom").setDirections(EAST, SOUTH));
         // Basement~
-        putRoom(new BasicRoom(this, new Point(-1,1),"Basement").setDirections(NORTH));
+        putRoom(new BasicRoom(this, new Point(-1, 1), "Basement").setDirections(NORTH));
         // Ghostroom~
-        putRoom(new BasicRoom(this, new Point(2,2),"Ghostroom").setDirections(SOUTH));
+        putRoom(new BasicRoom(this, new Point(2, 2), "Ghostroom").setDirections(SOUTH));
         // Office~
-        putRoom(new BasicRoom(this, new Point(2,1),"Office").setDirections(NORTH,EAST,WEST));
+        putRoom(new BasicRoom(this, new Point(2, 1), "Office").setDirections(NORTH, EAST, WEST));
         // Bathroom~
-        putRoom(new BasicRoom(this, new Point(2,-1),"Bathroom").setDirections(NORTH,EAST));
+        putRoom(new BasicRoom(this, new Point(2, -1), "Bathroom").setDirections(NORTH, EAST));
         // Darkroom~
-        putRoom(new BasicRoom(this, new Point(3,1),"Dark Room").setDirections(SOUTH,WEST));
+        putRoom(new BasicRoom(this, new Point(3, 1), "Dark Room").setDirections(SOUTH, WEST));
         // Sideroom2~
-        putRoom(new BasicRoom(this, new Point(3,-1),"SideRoom2").setDirections(NORTH,WEST));
-                
+        putRoom(new BasicRoom(this, new Point(3, -1), "SideRoom2").setDirections(NORTH, WEST));
+
         currentRoom = map.get(new Point(0, 0));
         facade.onRoomEnter(currentRoom);
     }

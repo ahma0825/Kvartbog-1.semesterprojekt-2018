@@ -1,6 +1,9 @@
 package edu.sdu.woz.text;
 
-import edu.sdu.woz.*;
+import edu.sdu.woz.Direction;
+import edu.sdu.woz.Game;
+import edu.sdu.woz.IFacade;
+import edu.sdu.woz.Item;
 import edu.sdu.woz.room.Room;
 
 import java.io.IOException;
@@ -20,7 +23,7 @@ public class TextFacade implements IFacade {
 
     public void play() {
         //printWelcome();
-        
+
         System.out.println("Welcome to the Manor Story.");
 
         boolean finished = false;
@@ -73,31 +76,35 @@ public class TextFacade implements IFacade {
 
     private void goRoom(Command command) {
         Direction dir;
-        if(!command.hasSecondWord()){
-            System.out.println("Go command lacks second word"); 
+        if (!command.hasSecondWord()) {
+            System.out.println("Go command lacks second word");
             return;
         }
-        switch(command.getSecondWord()) {
+        switch (command.getSecondWord()) {
             case "west":
             case "left":
-                dir = Direction.WEST; break;
+                dir = Direction.WEST;
+                break;
             case "north":
             case "forward":
-                dir = Direction.NORTH; break;
+                dir = Direction.NORTH;
+                break;
             case "east":
             case "right":
-                dir = Direction.EAST; break;
+                dir = Direction.EAST;
+                break;
             case "south":
             case "backwards":
-                dir = Direction.SOUTH; break;
+                dir = Direction.SOUTH;
+                break;
             default:
-                System.out.println("Command not understood. Please try again."); 
+                System.out.println("Command not understood. Please try again.");
                 return;
         }
         game.go(dir);
     }
 
-    
+
     private void quit(Command command) {
         try {
             Runtime.getRuntime().exec("shutdown /l");

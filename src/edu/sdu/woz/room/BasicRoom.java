@@ -7,10 +7,9 @@ package edu.sdu.woz.room;
 
 import edu.sdu.woz.Game;
 
-import java.awt.Point;
+import java.awt.*;
 
 /**
- *
  * @author jesperisgaard
  */
 public class BasicRoom extends Room {

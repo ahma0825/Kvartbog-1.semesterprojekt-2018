@@ -29,15 +29,15 @@ public abstract class Room {
     public Point getPosition() {
         return pos;
     }
-    
+
     public abstract String examine();
 
-    public boolean canGo(Direction direction){
+    public boolean canGo(Direction direction) {
         if (!allowedDirections.contains(direction)) return false;
 
         Point point = new Point(
                 pos.x + direction.getDelta().x,
-                pos.y + direction.getDelta().y );
+                pos.y + direction.getDelta().y);
 
         return game.getRoom(point) != null;
     }
@@ -46,7 +46,9 @@ public abstract class Room {
         return items;
     }
 
-    /** Returns true if the item was taken */
+    /**
+     * Returns true if the item was taken
+     */
     public boolean takeItem(Item item) {
         return items.remove(item);
     }
