@@ -1,7 +1,6 @@
 package edu.sdu.woz;
 
 import edu.sdu.woz.facade.IFacade;
-import edu.sdu.woz.facade.TextFacade;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ public class Game {
     private final List<Item> inventory = new ArrayList<>();
     private final IFacade facade;
 
-    public Game(TextFacade tf) {
+    public Game(IFacade tf) {
         facade = tf;
 
         // Entrance
@@ -28,6 +27,7 @@ public class Game {
         ));
 
         currentRoom = map.get(new Point(0, 0));
+        facade.onRoomEnter(currentRoom);
     }
 
     private void putRoom(Room room) {
