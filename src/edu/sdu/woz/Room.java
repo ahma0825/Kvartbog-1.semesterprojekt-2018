@@ -2,12 +2,16 @@ package edu.sdu.woz;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+import static edu.sdu.woz.Direction.*;
 
 public abstract class Room {
     private final Game game;
     private final Point pos;
-    private final List<Item> items = new ArrayList<Item>();
+    private final List<Item> items = new ArrayList<>();
+    private List<Direction> allowedDirections = Arrays.asList(NORTH, SOUTH, EAST, WEST);
 
     public Room(Game game, Point pos) {
         this.game = game;
@@ -25,10 +29,12 @@ public abstract class Room {
     public abstract String examine();
 
     public boolean canGo(Direction direction){
+        if (!allowedDirections.contains(direction)) return false;
+
         Point point = new Point(
                 pos.x + direction.getDelta().x,
                 pos.y + direction.getDelta().y );
-        
+
         return game.getRoom(point) != null;
     }
 
@@ -39,5 +45,9 @@ public abstract class Room {
     /** Returns true if the item was taken */
     public boolean takeItem(Item item) {
         return items.remove(item);
+    }
+
+    void setDirections(Direction... directions) {
+        allowedDirections = Arrays.asList(directions);
     }
 }
