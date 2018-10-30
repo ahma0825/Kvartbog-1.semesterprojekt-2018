@@ -47,7 +47,8 @@ public abstract class Room {
         return items.remove(item);
     }
 
-    void setDirections(Direction... directions) {
+    Room setDirections(Direction... directions) {
         allowedDirections = Arrays.asList(directions);
+        return this;
     }
 }
