@@ -1,10 +1,13 @@
 package edu.sdu.woz;
 
-import java.awt.Point;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Room {
     private final Game game;
     private final Point pos;
+    private final List<Item> items = new ArrayList<Item>();
 
     public Room(Game game, Point pos) {
         this.game = game;
@@ -28,6 +31,13 @@ public abstract class Room {
         
         return game.getRoom(point) != null;
     }
-    
-    
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    /** Returns true if the item was taken */
+    public boolean takeItem(Item item) {
+        return items.remove(item);
+    }
 }

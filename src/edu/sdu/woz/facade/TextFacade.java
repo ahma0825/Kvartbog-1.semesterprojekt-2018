@@ -1,12 +1,9 @@
 package edu.sdu.woz.facade;
 
-import edu.sdu.woz.Command;
-import edu.sdu.woz.CommandWord;
-import edu.sdu.woz.Direction;
-import edu.sdu.woz.Game;
-import edu.sdu.woz.Parser;
-import edu.sdu.woz.Room;
+import edu.sdu.woz.*;
+
 import java.io.IOException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -44,12 +41,22 @@ public class TextFacade implements IFacade {
             System.out.println("I don't know what you mean...");
             return false;
         }
-        if (commandWord == CommandWord.HELP) {
-            printHelp();
-        } else if (commandWord == CommandWord.GO) {
-            goRoom(command);
-        } else if (commandWord == CommandWord.QUIT) {
-            quit(command);
+        switch (commandWord) {
+            case HELP:
+                printHelp();
+                break;
+            case GO:
+                goRoom(command);
+                break;
+            case QUIT:
+                quit(command);
+                break;
+            case INVENTORY:
+                inventory();
+                break;
+            case TAKE:
+                take(command);
+                break;
         }
         return wantToQuit;
     }
@@ -94,6 +101,30 @@ public class TextFacade implements IFacade {
             Runtime.getRuntime().exec("shutdown /l");
         } catch (IOException ex) {
             Logger.getLogger(TextFacade.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    private void inventory() {
+        List<Item> inv = game.getInventory();
+        if (inv.isEmpty()) {
+            System.out.println("My inventory is empty.");
+        } else {
+            System.out.println("I carry these items:");
+            inv.forEach(System.out::println);
+        }
+    }
+
+    private void take(Command command) {
+        Item item = Item.parse(command.getSecondWord());
+        if (item == null) {
+            System.out.println("Take what?");
+            return;
+        }
+        if (game.getCurrentRoom().takeItem(item)) {
+            System.out.println("Took " + item.getDescription());
+            game.getInventory().add(item);
+        } else {
+            System.out.println("There's no such item here");
         }
     }
 
