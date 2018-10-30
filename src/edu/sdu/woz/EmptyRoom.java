@@ -19,7 +19,7 @@ public class EmptyRoom extends Room {
     
     @Override
     public String examine(){
-        return ("This room does not include anything that can be examined");
+        return "This room does not include anything that can be examined";
     }
     
     

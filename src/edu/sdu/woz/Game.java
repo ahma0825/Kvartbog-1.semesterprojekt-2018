@@ -16,7 +16,13 @@ public class Game {
 
     public Game(TextFacade tf) {
         facade = tf;
-        map.put(new Point(0,0), new EmptyRoom(this, new Point(0,0)));
+
+        // Entrance
+        putRoom(new EmptyRoom(this, new Point(0,0)));
+    }
+
+    private void putRoom(Room room) {
+        map.put(room.getPosition(), room);
     }
 
     public HashMap<Point, Room> getMap() {
