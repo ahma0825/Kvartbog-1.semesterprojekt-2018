@@ -16,6 +16,7 @@ public class Game {
 
     public Game(TextFacade tf) {
         facade = tf;
+        map.put(new Point(0,0), new EmptyRoom(this, new Point(0,0)));
     }
 
     public HashMap<Point, Room> getMap() {
