@@ -1,5 +1,6 @@
 package edu.sdu.woz;
 
+import static edu.sdu.woz.Direction.EAST;
 import edu.sdu.woz.facade.IFacade;
 
 import java.awt.*;
@@ -18,11 +19,11 @@ public class Game {
 
         // Entrance
         putRoom(new EmptyRoom(this, new Point(0,0),
-                "You find yourself standing in a grand entrance. There's a hallway to the North."
+                "You find yourself standing in a grand entrance. There's a hallway to the north."
         ));
 
         // End Room~
-        putRoom(new EmptyRoom(this, new Point(-1,0),"End Room"));
+        putRoom(new EmptyRoom(this, new Point(-1,0),"End Room").setDirections(EAST));
         // Dining Room~
         putRoom(new EmptyRoom(this, new Point(1,0),"Dining Room"));
         // Room
