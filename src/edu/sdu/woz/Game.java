@@ -19,12 +19,12 @@ public class Game {
 
         // Entrance
         putRoom(new EmptyRoom(this, new Point(0,0),
-                "You find yourself standing in a grand entrance."
+                "You find yourself standing in a grand entrance. There's a hallway to the North."
         ));
 
         // Hallway
         putRoom(new EmptyRoom(this, new Point(0,1),
-                "This is some hallway."
+                "This is some hallway. There are walls ahead of you and to both your sides. The only way is back."
         ));
 
         currentRoom = map.get(new Point(0, 0));
@@ -61,6 +61,7 @@ public class Game {
 
     public Room go(Direction direction) {
         if (!currentRoom.canGo(direction)) {
+            System.out.println("You can't go in this direction");
             return null;
         }
 

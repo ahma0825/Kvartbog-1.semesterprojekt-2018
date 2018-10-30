@@ -19,6 +19,7 @@ public class TextFacade implements IFacade {
 
     public void play() {
         //printWelcome();
+        
         System.out.println("Welcome to the Manor Story.");
 
         boolean finished = false;
@@ -121,7 +122,7 @@ public class TextFacade implements IFacade {
             return;
         }
         if (game.getCurrentRoom().takeItem(item)) {
-            System.out.println("Took " + item.getDescription());
+            System.out.println("You took " + item.getDescription());
             game.getInventory().add(item);
         } else {
             System.out.println("There's no such item here");

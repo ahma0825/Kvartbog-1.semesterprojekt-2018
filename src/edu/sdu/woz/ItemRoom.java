@@ -11,15 +11,16 @@ import java.awt.Point;
  *
  * @author jesperisgaard
  */
-public class EmptyRoom extends Room {
+public class ItemRoom extends Room {
 
     private String description;
 
-    public EmptyRoom(Game game, Point pos, String description) {
+    public ItemRoom(Game game, Point pos) {
         super(game, pos);
-        this.description = description;
     }
 
+    
+    
     @Override
     public String examine() {
         return description;
