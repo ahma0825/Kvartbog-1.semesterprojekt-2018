@@ -23,4 +23,14 @@ public enum Item {
     public String toString() {
         return getName();
     }
+
+    /**
+     * Parses the item name and attempts to find the corresponding enum. May return null.
+     */
+    public static Item parse(String name) {
+        for (Item item : values()) {
+            if (item.getName().equalsIgnoreCase(name)) return item;
+        }
+        return null;
+    }
 }

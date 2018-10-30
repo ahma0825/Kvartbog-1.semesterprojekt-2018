@@ -39,6 +39,10 @@ public class Game {
         return inventory;
     }
 
+    public Room getCurrentRoom() {
+        return currentRoom;
+    }
+
     public Room go(Direction direction) {
         if (!currentRoom.canGo(direction)) {
             return null;

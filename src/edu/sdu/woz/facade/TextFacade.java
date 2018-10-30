@@ -54,6 +54,9 @@ public class TextFacade implements IFacade {
             case INVENTORY:
                 inventory();
                 break;
+            case TAKE:
+                take(command);
+                break;
         }
         return wantToQuit;
     }
@@ -108,6 +111,20 @@ public class TextFacade implements IFacade {
         } else {
             System.out.println("I carry these items:");
             inv.forEach(System.out::println);
+        }
+    }
+
+    private void take(Command command) {
+        Item item = Item.parse(command.getSecondWord());
+        if (item == null) {
+            System.out.println("Take what?");
+            return;
+        }
+        if (game.getCurrentRoom().takeItem(item)) {
+            System.out.println("Took " + item.getDescription());
+            game.getInventory().add(item);
+        } else {
+            System.out.println("There's no such item here");
         }
     }
 
