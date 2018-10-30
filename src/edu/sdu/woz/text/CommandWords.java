@@ -1,4 +1,4 @@
-package edu.sdu.woz;
+package edu.sdu.woz.text;
 
 import java.util.HashMap;
 

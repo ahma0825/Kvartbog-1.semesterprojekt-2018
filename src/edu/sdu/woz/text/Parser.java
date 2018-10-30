@@ -1,7 +1,4 @@
-package edu.sdu.woz.facade;
-
-import edu.sdu.woz.Command;
-import edu.sdu.woz.CommandWords;
+package edu.sdu.woz.text;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package edu.sdu.woz.facade;
+package edu.sdu.woz.text;
 
 import edu.sdu.woz.*;
 import edu.sdu.woz.room.Room;

@@ -1,7 +1,7 @@
 package edu.sdu.woz;
 
 import static edu.sdu.woz.Direction.*;
-import edu.sdu.woz.facade.IFacade;
+
 import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.Room;
 

@@ -1,4 +1,4 @@
-package edu.sdu.woz;
+package edu.sdu.woz.text;
 
 public enum CommandWord {
     GO("go"), QUIT("quit"), HELP("help"), INVENTORY("inventory"), TAKE("take"), UNKNOWN("?");

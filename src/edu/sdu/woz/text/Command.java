@@ -1,4 +1,4 @@
-package edu.sdu.woz;
+package edu.sdu.woz.text;
 
 /**
  * This class is part of the "World of Zuul" application.
