@@ -151,3 +151,20 @@ Referent: Ahmad
 
 Vi brugte hele dagen på at arbejde på vores spil, hvor vi begyndte småt med kodning. Vi skabte "roomclassen" og facade-interface. 
 Vi besluttede os for at ændre på vores problemformulering, til at vi kunne få en bedre udarbejdet rapport.
+
+## Logbog uge 44
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Gennemgå krav til projektaflevering og arbejde videre på kode
+
+Referent: Kim
+
+Tilstede: Erik, Frederik, Jesper, Saq, Ahmad og  Kim
+
+#### Referat
+Vi gennemgik nogle af kravene til projektafleveringen med Erik og fik afklaret, hvad det første udkast til rapporten skulle indeholde. Derefter startede vi på første udgave af projektaflevering, vi skrev historien til spillet, vi gennemgik koden for vores spil, og vi skrev videre på koden i BasicRoom og Item klasserne med mere.
+
