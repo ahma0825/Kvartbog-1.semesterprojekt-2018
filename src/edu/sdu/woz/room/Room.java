@@ -12,7 +12,7 @@ import java.util.List;
 import static edu.sdu.woz.Direction.*;
 
 public abstract class Room {
-    private final Game game;
+    final Game game;
     private final Point pos;
     protected final List<Item> items = new ArrayList<>();
     private List<Direction> allowedDirections = Arrays.asList(NORTH, SOUTH, EAST, WEST);
