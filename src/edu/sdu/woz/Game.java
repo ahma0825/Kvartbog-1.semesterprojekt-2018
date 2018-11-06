@@ -1,9 +1,9 @@
 package edu.sdu.woz;
 
 import edu.sdu.woz.room.BasicRoom;
-import edu.sdu.woz.room.Room;
 import edu.sdu.woz.room.KitchenRoom;
 import edu.sdu.woz.room.OfficeRoom;
+import edu.sdu.woz.room.Room;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
-import static jdk.nashorn.internal.codegen.CompilerConstants.THIS;
 
 public class Game {
 
@@ -34,11 +33,7 @@ public class Game {
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
         // Kitchen~
-<<<<<<< HEAD
-        putRoom(new BasicRoom(this, new Point(3, 0), "You enter the kitchen, knives and plates are all over the place and covered in blood. \nThe only thing that isn't red is a string of garlic.").setDirections(NORTH, SOUTH, WEST));
-=======
         putRoom(new KitchenRoom(this, new Point(3, 0)).setDirections(NORTH, SOUTH, WEST));
->>>>>>> origin/master
         // Sideroom
         putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty").setDirections(EAST, SOUTH));
         // Basement~
