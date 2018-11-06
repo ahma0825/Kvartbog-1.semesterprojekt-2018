@@ -1,6 +1,5 @@
 package edu.sdu.woz;
 
-
 import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.KitchenRoom;
 import edu.sdu.woz.room.OfficeRoom;
@@ -15,7 +14,6 @@ import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
 import static edu.sdu.woz.text.Escapes.*;
-
 
 public class Game {
 
@@ -49,9 +47,8 @@ public class Game {
         putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
         // Bathroom~
         putRoom(new BasicRoom(this, new Point(2, -1), "You have entered the bathroom. "
-        + "\nThe bathtub is filled with blood. "
-        + "\nThere’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST)
-        );
+                + "\nThe bathtub is filled with blood. "
+                + "\nThere’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST));
         // Darkroom~
         putRoom(new BasicRoom(this, new Point(3, 1), "BATS fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
         // Ritualroom~

@@ -26,7 +26,6 @@ public class TextFacade implements IFacade {
         //printWelcome();
 
         System.out.println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE) + "Welcome to the Manor Story.");
-        System.out.println("");
         System.out.print(Escapes.RESET);
 
         boolean finished = false;
@@ -73,10 +72,7 @@ public class TextFacade implements IFacade {
     }
 
     private void printHelp() {
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("These are the commands that are available in this program:");
         parser.showCommands();
     }
 
