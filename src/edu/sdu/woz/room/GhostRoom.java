@@ -10,6 +10,8 @@ import edu.sdu.woz.Item;
 
 import java.awt.*;
 
+import static edu.sdu.woz.text.Escapes.*;
+
 /**
  * @author jesperisgaard
  */
@@ -25,8 +27,9 @@ public class GhostRoom extends Room {
     public String examine() {
         if(items.contains(Item.SHOTGUN)){  
             return "You have entered the ghostroom. "  
-                    +"\nAs u step in the room, a ghost will appear shouting THIS IS MY ROOM!. "
-                    +"\nshortly after the shoutning the ghost will disappear. "
+                    +"\nAs u step in the room, a ghost will appear shouting "
+                    + modes(BOLD, BG_MAGENTA, FG_BR_WHITE) + "THIS IS MY ROOM!" + RESET + ". "
+                    +"\nshortly after the shouting the ghost will disappear. "
                     +"\nYou must pick up the shotgun that is placed in the corner of the room";
         } else {
             return "There is no Shotgun in this room."; //Needs better writing

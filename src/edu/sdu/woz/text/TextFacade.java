@@ -73,10 +73,7 @@ public class TextFacade implements IFacade {
     }
 
     private void printHelp() {
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("These are the commands that are available in this program:");
         parser.showCommands();
     }
 
