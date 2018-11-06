@@ -6,6 +6,7 @@ import edu.sdu.woz.room.OfficeRoom;
 import edu.sdu.woz.room.Room;
 import edu.sdu.woz.room.BasementRoom;
 import edu.sdu.woz.room.GhostRoom;
+import edu.sdu.woz.room.RitualRoom;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -52,7 +53,7 @@ public class Game {
         // Darkroom~
         putRoom(new BasicRoom(this, new Point(3, 1), "BATS fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
         // Ritualroom~
-        putRoom(new BasicRoom(this, new Point(3, -1), "You enter a dark room, there are weird markings on the wall. \nThere's a dead body on what appears to be a sacrifice table").setDirections(NORTH, WEST));
+        putRoom(new RitualRoom(this, new Point(3, -1)).setDirections(NORTH, WEST));
 
         currentRoom = map.get(new Point(0, 0));
         facade.onRoomEnter(currentRoom);

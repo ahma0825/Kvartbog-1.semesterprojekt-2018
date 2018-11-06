@@ -3,7 +3,8 @@ package edu.sdu.woz;
 public enum Item {
     GARLIC("Garlic", "a string of garlic"),
     KEY("Key", "an item that grants you access"),
-    SHOTGUN("Shotgun", "a badass sawed-off shotgun");
+    SHOTGUN("Shotgun", "a badass sawed-off shotgun"),
+    ZIPPO("Zippo lighter", "good for lighting stuff on fire");
 
     private final String name;
     private final String description;

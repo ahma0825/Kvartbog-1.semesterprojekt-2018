@@ -5,6 +5,7 @@ import edu.sdu.woz.Game;
 import edu.sdu.woz.IFacade;
 import edu.sdu.woz.Item;
 import edu.sdu.woz.room.OfficeRoom;
+import edu.sdu.woz.room.RitualRoom;
 import edu.sdu.woz.room.Room;
 
 import java.io.IOException;
@@ -146,6 +147,14 @@ public class TextFacade implements IFacade {
             System.out.println(((OfficeRoom) game.getCurrentRoom()).answer());
         } else {
             System.out.println("I don't know what to answer.");
+        }
+    }
+    
+    private void ignite() {
+        if (game.getCurrentRoom() instanceof RitualRoom) {
+            System.out.println(((RitualRoom) game.getCurrentRoom()).ignite());
+        } else {
+            System.out.println("I don't have a lighter");
         }
     }
 }
