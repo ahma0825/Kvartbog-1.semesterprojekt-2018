@@ -4,6 +4,8 @@ import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.KitchenRoom;
 import edu.sdu.woz.room.OfficeRoom;
 import edu.sdu.woz.room.Room;
+import edu.sdu.woz.room.BasementRoom;
+import edu.sdu.woz.room.GhostRoom;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -11,7 +13,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
-import edu.sdu.woz.room.BasementRoom;
 
 public class Game {
 
@@ -40,9 +41,7 @@ public class Game {
         // Basement~
         putRoom(new BasementRoom(this, new Point(1, -1)).setDirections(NORTH));
         // Ghostroom~
-        putRoom(new BasicRoom(this, new Point(2, 2), "You have entered the ghostroom. "
-        + "Before you step in, a ghost will appear by shouting THIS IS MY ROOM!. "
-        + "You must pick up the shotgun to shoot at the ghost!. ").setDirections(SOUTH));
+        putRoom(new GhostRoom(this, new Point(2, 2)).setDirections(SOUTH));
         // Office~
         putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
         // Bathroom~
