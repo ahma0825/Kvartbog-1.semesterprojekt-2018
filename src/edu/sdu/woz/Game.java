@@ -11,8 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
+import static jdk.nashorn.internal.codegen.CompilerConstants.THIS;
 
 public class Game {
+
     private Room currentRoom;
     private final HashMap<Point, Room> map = new HashMap<>();
     private final List<Item> inventory = new ArrayList<>();
@@ -20,7 +22,7 @@ public class Game {
 
     public Game(IFacade tf) {
         facade = tf;
-        
+
         // Entrance
         putRoom(new BasicRoom(this, new Point(0, 0),
                 "You find yourself standing in a grand entrance. There's a hallway to the north."
@@ -38,11 +40,23 @@ public class Game {
         // Basement~
         putRoom(new BasicRoom(this, new Point(-1, 1), "Basement").setDirections(NORTH));
         // Ghostroom~
-        putRoom(new BasicRoom(this, new Point(2, 2), "Ghostroom").setDirections(SOUTH));
+        putRoom(new BasicRoom(this, new Point(2, 2), "You have entered the ghostroom. "
+        + "Before u step in, a ghost will appear by shouting THIS IS MY ROOM!. "
+        + "You must pick up the shotgun to shoot at the ghost!. ").setDirections(SOUTH));
         // Office~
+<<<<<<< HEAD
         putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
+=======
+        putRoom(new BasicRoom(this, new Point(2, 1), "You have entered the office. " 
+        + "There is an old rotary phone placed on the desktop. "
+        + "there is a white and black stribed zebra skin on the ground"
+        + "The light is flickering in the room. ").setDirections(NORTH, EAST, WEST));
+>>>>>>> Room-Descriptions
         // Bathroom~
-        putRoom(new BasicRoom(this, new Point(2, -1), "Bathroom").setDirections(NORTH, EAST));
+        putRoom(new BasicRoom(this, new Point(2, -1), "You have entered the bathroom. "
+        + "The bathtub is filled with blood. "
+        + "There’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST)
+        );
         // Darkroom~
         putRoom(new BasicRoom(this, new Point(3, 1), "Darkroom").setDirections(SOUTH, WEST));
         // Ritualroom~
