@@ -40,7 +40,7 @@ public class Game {
         putRoom(new BasicRoom(this, new Point(-1, 1), "The door is heavy and squeaky, there's a strong smell of iron in the air. \nA VAMPIRE APPEARS").setDirections(NORTH));
         // Ghostroom~
         putRoom(new BasicRoom(this, new Point(2, 2), "You have entered the ghostroom. "
-        + "Before u step in, a ghost will appear by shouting THIS IS MY ROOM!. "
+        + "Before you step in, a ghost will appear by shouting THIS IS MY ROOM!. "
         + "You must pick up the shotgun to shoot at the ghost!. ").setDirections(SOUTH));
         // Office~
         putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
