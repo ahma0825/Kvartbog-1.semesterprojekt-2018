@@ -32,11 +32,7 @@ public class OfficeRoom extends Room {
     
     @Override
     public String examine() {
-        if(items.contains(Item.GARLIC)){
-            return "There is a string of Garlic in this room."; //Needs better writing
-        } else {
-            return "There is no Garlic in this room."; //Needs better writing
-        }
+        return "Office Room";
     }
     
     
