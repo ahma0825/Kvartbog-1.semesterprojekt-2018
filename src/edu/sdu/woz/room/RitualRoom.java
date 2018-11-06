@@ -2,6 +2,7 @@ package edu.sdu.woz.room;
 
 import edu.sdu.woz.Game;
 import edu.sdu.woz.Item;
+import static edu.sdu.woz.text.Escapes.GO_SCARY;
 import java.awt.Point;
 
 public class RitualRoom extends Room {
@@ -24,7 +25,7 @@ public class RitualRoom extends Room {
     public String ignite() {
         if (!game.isIgnited()) {
             game.setIgnited(true);
-            return "You flick the lighter and throw it at the body setting it ablaze.";
+            return "You flick the lighter and throw it at the body setting it" + GO_SCARY +  "ABLAZE";
         } else {
             return "The lighter is gone";
         }
