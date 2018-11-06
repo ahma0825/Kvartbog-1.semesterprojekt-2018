@@ -67,6 +67,8 @@ public class TextFacade implements IFacade {
                 break;
             case ANSWER:
                 answer();
+            case IGNITE:
+                ignite();
                 break;
         }
         return wantToQuit;
@@ -153,7 +155,7 @@ public class TextFacade implements IFacade {
         if (game.getCurrentRoom() instanceof RitualRoom) {
             System.out.println(((RitualRoom) game.getCurrentRoom()).ignite());
         } else {
-            System.out.println("I don't have a lighter");
+            System.out.println("You don't have a lighter");
         }
     }
 }

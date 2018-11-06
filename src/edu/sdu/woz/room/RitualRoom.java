@@ -23,11 +23,11 @@ public class RitualRoom extends Room {
     }
 
     public String ignite() {
-        if (!game.isIgnited()) {
+        if (!game.isIgnited() && !items.contains(Item.ZIPPO)) {
             game.setIgnited(true);
-            return "You flick the lighter and throw it at the body setting it" + GO_SCARY +  "ABLAZE";
+            return "You flick the lighter and throw it at the body setting it" + GO_SCARY +  " ABLAZE";
         } else {
-            return "The lighter is gone";
+            return "You don't have a lighter";
         }
     }
 
