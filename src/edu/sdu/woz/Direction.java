@@ -6,7 +6,9 @@ public enum Direction {
     NORTH(new Point(0, 1)),
     EAST(new Point(1, 0)),
     WEST(new Point(-1, 0)),
-    SOUTH(new Point(0, -1));
+    SOUTH(new Point(0, -1)),
+    UP(new Point(0, 1)),
+    DOWN(new Point(0, -1));
 
     private final Point delta;
 
