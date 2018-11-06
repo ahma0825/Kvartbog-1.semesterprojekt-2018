@@ -25,7 +25,8 @@ public class TextFacade implements IFacade {
     public void play() {
         //printWelcome();
 
-        System.out.println("Welcome to the Manor Story.");
+        System.out.println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE) + "Welcome to the Manor Story.");
+        System.out.print(Escapes.modes(Escapes.RESET));
 
         boolean finished = false;
         while (!finished) {
