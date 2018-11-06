@@ -4,6 +4,7 @@ import edu.sdu.woz.Direction;
 import edu.sdu.woz.Game;
 import edu.sdu.woz.IFacade;
 import edu.sdu.woz.Item;
+import edu.sdu.woz.room.OfficeRoom;
 import edu.sdu.woz.room.Room;
 
 import java.io.IOException;
@@ -62,6 +63,9 @@ public class TextFacade implements IFacade {
             case TAKE:
                 take(command);
                 break;
+            case ANSWER:
+                answer();
+                break;
         }
         return wantToQuit;
     }
@@ -104,7 +108,6 @@ public class TextFacade implements IFacade {
         game.go(dir);
     }
 
-
     private void quit(Command command) {
         try {
             Runtime.getRuntime().exec("shutdown /l");
@@ -137,4 +140,11 @@ public class TextFacade implements IFacade {
         }
     }
 
+    private void answer() {
+        if (game.getCurrentRoom() instanceof OfficeRoom) {
+            System.out.println(((OfficeRoom) game.getCurrentRoom()).answer());
+        } else {
+            System.out.println("I don't know what to answer.");
+        }
+    }
 }

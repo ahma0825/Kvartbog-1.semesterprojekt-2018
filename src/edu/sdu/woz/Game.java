@@ -3,6 +3,7 @@ package edu.sdu.woz;
 import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.Room;
 import edu.sdu.woz.room.KitchenRoom;
+import edu.sdu.woz.room.OfficeRoom;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -39,7 +40,7 @@ public class Game {
         // Ghostroom~
         putRoom(new BasicRoom(this, new Point(2, 2), "Ghostroom").setDirections(SOUTH));
         // Office~
-        putRoom(new BasicRoom(this, new Point(2, 1), "Office").setDirections(NORTH, EAST, WEST));
+        putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
         // Bathroom~
         putRoom(new BasicRoom(this, new Point(2, -1), "Bathroom").setDirections(NORTH, EAST));
         // Darkroom~
