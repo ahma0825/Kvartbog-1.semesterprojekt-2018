@@ -46,13 +46,14 @@ public class Game {
         putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
         // Bathroom~
         putRoom(new BasicRoom(this, new Point(2, -1), "You have entered the bathroom. "
-        + "The bathtub is filled with blood. "
-        + "There’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST)
+        + "\nThe bathtub is filled with blood. "
+        + "\nThere’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST)
         );
         // Darkroom~
         putRoom(new BasicRoom(this, new Point(3, 1), "BATS fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
         // Ritualroom~
-        putRoom(new BasicRoom(this, new Point(3, -1), "You enter a dark room, there are weird markings on the wall. \nThere's a dead body on what appears to be a sacrifice table").setDirections(NORTH, WEST));
+        putRoom(new BasicRoom(this, new Point(3, -1), "You enter a dark room, there are weird markings on the wall. "
+                + "\nThere's a dead body on what appears to be a sacrifice table").setDirections(NORTH, WEST));
 
         currentRoom = map.get(new Point(0, 0));
         facade.onRoomEnter(currentRoom);
