@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
+import edu.sdu.woz.room.BasementRoom;
 
 public class Game {
 
@@ -28,7 +29,7 @@ public class Game {
         ).setDirections(EAST, WEST));
         // End Room~
         putRoom(new BasicRoom(this, new Point(-1, 0), "You exit the mansion, you are free!").setDirections(EAST));
-        // Dining Room~
+        // Dining Room
         putRoom(new BasicRoom(this, new Point(1, 0), "You enter a dining hall, there's a feast going on. All the participants are SKELETONS").setDirections(NORTH, EAST, SOUTH, WEST));
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
@@ -37,10 +38,10 @@ public class Game {
         // Sideroom
         putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty").setDirections(EAST, SOUTH));
         // Basement~
-        putRoom(new BasicRoom(this, new Point(-1, 1), "The door is heavy and squeaky, there's a strong smell of iron in the air. \nA VAMPIRE APPEARS").setDirections(NORTH));
+        putRoom(new BasementRoom(this, new Point(1, -1)).setDirections(NORTH));
         // Ghostroom~
         putRoom(new BasicRoom(this, new Point(2, 2), "You have entered the ghostroom. "
-        + "Before u step in, a ghost will appear by shouting THIS IS MY ROOM!. "
+        + "Before you step in, a ghost will appear by shouting THIS IS MY ROOM!. "
         + "You must pick up the shotgun to shoot at the ghost!. ").setDirections(SOUTH));
         // Office~
         putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
