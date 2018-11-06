@@ -168,3 +168,18 @@ Tilstede: Erik, Frederik, Jesper, Saq, Ahmad og  Kim
 #### Referat
 Vi gennemgik nogle af kravene til projektafleveringen med Erik og fik afklaret, hvad det første udkast til rapporten skulle indeholde. Derefter startede vi på første udgave af projektaflevering, vi skrev historien til spillet, vi gennemgik koden for vores spil, og vi skrev videre på koden i BasicRoom og Item klasserne med mere.
 
+## Logbog uge 45
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Mød med Erik og derefter få skrevet videre på vores kode og rapport
+
+Referent: Jesper
+
+Tilstede: Erik, Frederik, Jesper, Ahmad og  Kim
+
+#### Referat
+Vi mødtes og fik en smule overblik over vores kode, hvorefter vi mødtes med Erik og fik styr på hvordan midtvejsseminariet ville foregå. Herefter blev vi enige om hvad alle skulle lave, i form af koden og delte os op hver for sig og kodede derudaf med mulighed for at kontakte hinanden for støtte. Halvvejs igennem dagen begyndte vi også med noget arbejde på rapporten.
