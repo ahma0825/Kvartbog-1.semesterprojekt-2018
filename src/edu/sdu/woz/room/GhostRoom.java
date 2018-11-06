@@ -25,9 +25,9 @@ public class GhostRoom extends Room {
     public String examine() {
         if(items.contains(Item.SHOTGUN)){  
             return "You have entered the ghostroom. "  
-                    +"\nAs u step in the room, a ghost will appear by shouting THIS IS MY ROOM!. "
+                    +"\nAs u step in the room, a ghost will appear shouting THIS IS MY ROOM!. "
                     +"\nshortly after the shoutning the ghost will disappear. "
-                    +"\nYou must pick up the shotgun that is placed in the of the room";
+                    +"\nYou must pick up the shotgun that is placed in the corner of the room";
         } else {
             return "There is no Shotgun in this room."; //Needs better writing
         }
