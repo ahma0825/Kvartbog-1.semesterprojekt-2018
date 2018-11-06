@@ -6,8 +6,6 @@ import java.awt.Point;
 
 public class RitualRoom extends Room {
 
-    private boolean ignited;
-
     public RitualRoom(Game game, Point pos) {
         super(game, pos);
         items.add(Item.ZIPPO);
@@ -24,8 +22,8 @@ public class RitualRoom extends Room {
     }
 
     public String ignite() {
-        if (!ignited) {
-            ignited = true;
+        if (!game.isIgnited()) {
+            game.setIgnited(true);
             return "You flick the lighter and throw it at the body setting it ablaze.";
         } else {
             return "The lighter is gone";

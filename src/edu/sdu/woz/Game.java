@@ -22,6 +22,7 @@ public class Game {
     private final HashMap<Point, Room> map = new HashMap<>();
     private final List<Item> inventory = new ArrayList<>();
     private final IFacade facade;
+    private boolean ignited;
 
     public Game(IFacade tf) {
         facade = tf;
@@ -82,6 +83,14 @@ public class Game {
 
     public List<Item> getInventory() {
         return inventory;
+    }
+
+    public boolean isIgnited() {
+        return ignited;
+    }
+
+    public void setIgnited(boolean ignited) {
+        this.ignited = ignited;
     }
 
     public Room getCurrentRoom() {
