@@ -23,9 +23,9 @@ public class KitchenRoom extends Room {
     @Override
     public String examine() {
         if(items.contains(Item.GARLIC)){
-            return "There is a string of Garlic in this room."; //Needs better writing
+            return "You enter the kitchen, knives and plates are all over the place and covered in blood. \nThe only thing that isn't red is a string of garlic.";
         } else {
-            return "There is no Garlic in this room."; //Needs better writing
+            return "You enter the kitchen, knives and plates are all over the place and covered in blood.";
         }
     }
     
