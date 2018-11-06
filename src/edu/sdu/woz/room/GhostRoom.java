@@ -28,8 +28,8 @@ public class GhostRoom extends Room {
         if(items.contains(Item.SHOTGUN)){  
             return "You have entered the ghostroom. "  
                     +"\nAs u step in the room, a ghost will appear shouting "
-                    + modes(BOLD, BG_MAGENTA, FG_BLACK) + "THIS IS MY ROOM!" + RESET + ". "
-                    +"\nshortly after the shoutning the ghost will disappear. "
+                    + modes(BOLD, BG_MAGENTA, FG_BR_WHITE) + "THIS IS MY ROOM!" + RESET + ". "
+                    +"\nshortly after the shouting the ghost will disappear. "
                     +"\nYou must pick up the shotgun that is placed in the corner of the room";
         } else {
             return "There is no Shotgun in this room."; //Needs better writing
