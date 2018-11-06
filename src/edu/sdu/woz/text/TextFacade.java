@@ -108,11 +108,7 @@ public class TextFacade implements IFacade {
     }
 
     private void quit(Command command) {
-        try {
-            Runtime.getRuntime().exec("shutdown /l");
-        } catch (IOException ex) {
-            Logger.getLogger(TextFacade.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        System.exit(0);
     }
 
     private void inventory() {
