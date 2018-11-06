@@ -27,6 +27,11 @@ public class Escapes {
     public static final int BG_CYAN = 46;
     public static final int BG_WHITE = 47;
 
+    /* Shorthands */
+    public static final String GO_BOLD = modes(BOLD);
+    public static final String GO_RED = modes(BOLD);
+    public static final String GO_SCARY = modes(BOLD, UNDERSCORE, BLINK, FG_RED);
+
     public static String modes(int... modes) {
         StringBuilder inner = new StringBuilder();
         for (int flag : modes) {
