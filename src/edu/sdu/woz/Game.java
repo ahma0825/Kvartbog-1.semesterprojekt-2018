@@ -37,7 +37,7 @@ public class Game {
         // Sideroom
         putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty").setDirections(EAST, SOUTH));
         // Basement~
-        putRoom(new BasicRoom(this, new Point(-1, 1), "The door is heavy and squeaky, there's a strong smell of iron in the air. \nA VAMPIRE APPEARS").setDirections(NORTH));
+        putRoom(new BasicRoom(this, new Point(1, -1), "The door is heavy and squeaky, there's a strong smell of iron in the air. \nA VAMPIRE APPEARS").setDirections(NORTH));
         // Ghostroom~
         putRoom(new BasicRoom(this, new Point(2, 2), "You have entered the ghostroom. "
         + "Before you step in, a ghost will appear by shouting THIS IS MY ROOM!. "
