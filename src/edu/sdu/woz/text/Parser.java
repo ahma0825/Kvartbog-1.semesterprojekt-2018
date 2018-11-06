@@ -37,6 +37,12 @@ public class Parser {
             case "east":
                 inputLine = "go east";
                 break;
+            case "up":
+                inputLine = "go up";
+                break;
+            case "down":
+                inputLine = "go down";
+                break;
             case "inv":
                 inputLine = "inventory";
                 break;
