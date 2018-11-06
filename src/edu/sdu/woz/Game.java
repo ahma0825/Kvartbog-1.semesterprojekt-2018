@@ -1,12 +1,6 @@
 package edu.sdu.woz;
 
-import edu.sdu.woz.room.BasicRoom;
-import edu.sdu.woz.room.KitchenRoom;
-import edu.sdu.woz.room.OfficeRoom;
-import edu.sdu.woz.room.Room;
-import edu.sdu.woz.room.BasementRoom;
-import edu.sdu.woz.room.GhostRoom;
-import edu.sdu.woz.room.RitualRoom;
+import edu.sdu.woz.room.*;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -14,7 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
-import static edu.sdu.woz.text.Escapes.*;
+import static edu.sdu.woz.text.Escapes.GO_SCARY;
+import static edu.sdu.woz.text.Escapes.RESET;
 
 public class Game {
 
@@ -34,7 +29,10 @@ public class Game {
         // End Room~
         putRoom(new BasicRoom(this, new Point(-1, 0), "You exit the mansion, you are free!").setDirections(EAST));
         // Dining Room
-        putRoom(new BasicRoom(this, new Point(1, 0), "You enter a dining hall, there's a feast going on. All the participants are SKELETONS").setDirections(NORTH, EAST, SOUTH, WEST));
+        putRoom(new BasicRoom(this, new Point(1, 0),
+                "You enter a dining hall, there's a feast going on. " +
+                        "\nAll the participants are " + GO_SCARY + "SKELETONS" + RESET
+        ).setDirections(NORTH, EAST, WEST, DOWN));
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
         // Kitchen~
@@ -42,7 +40,7 @@ public class Game {
         // Sideroom
         putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty").setDirections(EAST, SOUTH));
         // Basement~
-        putRoom(new BasementRoom(this, new Point(1, -1)).setDirections(NORTH));
+        putRoom(new BasementRoom(this, new Point(1, -1)).setDirections(UP));
         // Ghostroom~
         putRoom(new GhostRoom(this, new Point(2, 2)).setDirections(SOUTH));
         // Office~

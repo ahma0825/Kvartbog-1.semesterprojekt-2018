@@ -100,6 +100,12 @@ public class TextFacade implements IFacade {
             case "backwards":
                 dir = Direction.SOUTH;
                 break;
+            case "up":
+                dir = Direction.UP;
+                break;
+            case "down":
+                dir = Direction.DOWN;
+                break;
             default:
                 System.out.println("Command not understood. Please try again.");
                 return;

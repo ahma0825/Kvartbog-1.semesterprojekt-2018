@@ -1,5 +1,6 @@
 package edu.sdu.woz.text;
 
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class Escapes {
 
     public static final String RESET = modes(0);
