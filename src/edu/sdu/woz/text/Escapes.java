@@ -2,7 +2,7 @@ package edu.sdu.woz.text;
 
 public class Escapes {
 
-    public static final int RESET = 0;
+    public static final String RESET = modes(0);
     public static final int BOLD = 1;
     public static final int UNDERSCORE = 4;
     public static final int BLINK = 5;
