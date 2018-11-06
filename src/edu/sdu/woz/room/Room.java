@@ -14,7 +14,7 @@ import static edu.sdu.woz.Direction.*;
 public abstract class Room {
     private final Game game;
     private final Point pos;
-    private final List<Item> items = new ArrayList<>();
+    protected final List<Item> items = new ArrayList<>();
     private List<Direction> allowedDirections = Arrays.asList(NORTH, SOUTH, EAST, WEST);
 
     public Room(Game game, Point pos) {

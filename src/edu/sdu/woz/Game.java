@@ -2,6 +2,7 @@ package edu.sdu.woz;
 
 import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.Room;
+import edu.sdu.woz.room.KitchenRoom;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class Game {
 
     public Game(IFacade tf) {
         facade = tf;
-
+        
         // Entrance
         putRoom(new BasicRoom(this, new Point(0, 0),
                 "You find yourself standing in a grand entrance. There's a hallway to the north."
@@ -30,7 +31,7 @@ public class Game {
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "Room").setDirections(EAST, SOUTH, WEST));
         // Kitchen~
-        putRoom(new BasicRoom(this, new Point(3, 0), "Kitchen").setDirections(NORTH, SOUTH, WEST));
+        putRoom(new KitchenRoom(this, new Point(3, 0)).setDirections(NORTH, SOUTH, WEST));
         // Sideroom
         putRoom(new BasicRoom(this, new Point(1, 1), "SideRoom").setDirections(EAST, SOUTH));
         // Basement~
