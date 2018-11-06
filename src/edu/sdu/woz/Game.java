@@ -2,6 +2,8 @@ package edu.sdu.woz;
 
 import edu.sdu.woz.room.BasicRoom;
 import edu.sdu.woz.room.Room;
+import edu.sdu.woz.room.KitchenRoom;
+import edu.sdu.woz.room.OfficeRoom;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -9,8 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
+import static jdk.nashorn.internal.codegen.CompilerConstants.THIS;
 
 public class Game {
+
     private Room currentRoom;
     private final HashMap<Point, Room> map = new HashMap<>();
     private final List<Item> inventory = new ArrayList<>();
@@ -30,17 +34,26 @@ public class Game {
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
         // Kitchen~
+<<<<<<< HEAD
         putRoom(new BasicRoom(this, new Point(3, 0), "You enter the kitchen, knives and plates are all over the place and covered in blood. \nThe only thing that isn't red is a string of garlic.").setDirections(NORTH, SOUTH, WEST));
+=======
+        putRoom(new KitchenRoom(this, new Point(3, 0)).setDirections(NORTH, SOUTH, WEST));
+>>>>>>> origin/master
         // Sideroom
         putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty").setDirections(EAST, SOUTH));
         // Basement~
         putRoom(new BasicRoom(this, new Point(-1, 1), "The door is heavy and squeaky, there's a strong smell of iron in the air. \nA VAMPIRE APPEARS").setDirections(NORTH));
         // Ghostroom~
-        putRoom(new BasicRoom(this, new Point(2, 2), "Ghostroom").setDirections(SOUTH));
+        putRoom(new BasicRoom(this, new Point(2, 2), "You have entered the ghostroom. "
+        + "Before u step in, a ghost will appear by shouting THIS IS MY ROOM!. "
+        + "You must pick up the shotgun to shoot at the ghost!. ").setDirections(SOUTH));
         // Office~
-        putRoom(new BasicRoom(this, new Point(2, 1), "Office").setDirections(NORTH, EAST, WEST));
+        putRoom(new OfficeRoom(this, new Point(2, 1)).setDirections(NORTH, EAST, WEST));
         // Bathroom~
-        putRoom(new BasicRoom(this, new Point(2, -1), "Bathroom").setDirections(NORTH, EAST));
+        putRoom(new BasicRoom(this, new Point(2, -1), "You have entered the bathroom. "
+        + "The bathtub is filled with blood. "
+        + "There’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST)
+        );
         // Darkroom~
         putRoom(new BasicRoom(this, new Point(3, 1), "BATS fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
         // Ritualroom~

@@ -1,7 +1,7 @@
 package edu.sdu.woz;
 
 public enum Item {
-    GARLIC("Garlic", "a bundle of garlic"),
+    GARLIC("Garlic", "a string of garlic"),
     KEY("Key", "an item that grants you access"),
     SWORD("Sword", "a sharp blade to vanquish your enemies");
 
