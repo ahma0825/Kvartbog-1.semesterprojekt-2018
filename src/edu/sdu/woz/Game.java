@@ -23,15 +23,13 @@ public class Game {
         facade = tf;
 
         // Entrance
-        putRoom(new BasicRoom(this, new Point(0, 0),
-                "You find yourself standing in a grand entrance."
-        ).setDirections(EAST, WEST));
+        putRoom(new EntranceRoom(this, new Point(0, 0)).setDirections(EAST, WEST));
         // End Room~
         putRoom(new BasicRoom(this, new Point(-1, 0), "You exit the mansion, you are free!").setDirections(EAST));
         // Dining Room
         putRoom(new BasicRoom(this, new Point(1, 0),
                 "You enter a dining hall, there's a feast going on. " +
-                        "\nAll the participants are " + GO_SCARY + "SKELETONS" + RESET
+                        "\nAll the participants are " + GO_SCARY + "SKELETONS " + RESET + "There's a trapdoor leading down to a basement"
         ).setDirections(NORTH, EAST, WEST, DOWN));
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
