@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.sdu.woz.room;
 
 import edu.sdu.woz.Direction;
@@ -13,9 +8,6 @@ import java.awt.*;
 
 import static edu.sdu.woz.text.Escapes.*;
 
-/**
- * @author jesperisgaard
- */
 public class GhostRoom extends Room {
 
     public GhostRoom(Game game, Point pos) {
