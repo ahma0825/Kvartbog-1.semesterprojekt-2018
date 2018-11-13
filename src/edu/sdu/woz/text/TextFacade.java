@@ -8,10 +8,8 @@ import edu.sdu.woz.room.OfficeRoom;
 import edu.sdu.woz.room.RitualRoom;
 import edu.sdu.woz.room.Room;
 
-import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class TextFacade implements IFacade {
 
@@ -70,6 +68,9 @@ public class TextFacade implements IFacade {
                 break;
             case IGNITE:
                 ignite();
+                break;
+            case DIRECTIONS:
+                directions();
                 break;
         }
         return wantToQuit;
@@ -159,4 +160,17 @@ public class TextFacade implements IFacade {
             System.out.println("Can't do this.");
         }
     }
+
+    private void directions() {
+        StringBuilder sb = new StringBuilder();
+        Arrays.stream(Direction.values())
+                .filter(dir -> game.getCurrentRoom().canGo(dir))
+                .forEach(dir -> {
+                    sb.append(dir.name().toLowerCase());
+                    sb.append(", ");
+                });
+
+        System.out.println(sb.substring(0, sb.length() - 2));
+    }
+
 }
