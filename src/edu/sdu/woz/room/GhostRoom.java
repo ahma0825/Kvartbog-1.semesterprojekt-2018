@@ -33,6 +33,9 @@ public class GhostRoom extends Room {
     @Override
     public void afterEnter() {
         if (!game.isIgnited()) {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ignored) {}
             game.go(Direction.SOUTH);
         }
     }
