@@ -46,6 +46,9 @@ public class Parser {
             case "inv":
                 inputLine = "inventory";
                 break;
+            case "directions":
+                inputLine = "dir";
+                break;
         }
 
         Scanner tokenizer = new Scanner(inputLine);
