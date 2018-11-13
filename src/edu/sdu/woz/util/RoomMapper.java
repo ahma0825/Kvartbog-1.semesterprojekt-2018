@@ -56,4 +56,8 @@ public class RoomMapper implements IFacade {
     @Override
     public void onRoomEnter(Room room) {
     }
+
+    @Override
+    public void onGameOver() {
+    }
 }
