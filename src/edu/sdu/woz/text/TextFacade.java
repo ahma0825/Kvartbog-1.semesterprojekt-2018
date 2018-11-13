@@ -70,7 +70,7 @@ public class TextFacade implements IFacade {
                 ignite();
                 break;
             case DIRECTIONS:
-                directions();
+                System.out.println(getDirections());
                 break;
         }
         return wantToQuit;
@@ -114,6 +114,13 @@ public class TextFacade implements IFacade {
                 System.out.println("Command not understood. Please try again.");
                 return;
         }
+
+        if (!game.getCurrentRoom().canGo(dir)) {
+            System.out.println("You can't go in that direction.");
+            System.out.println("Available directions: " + getDirections());
+            return;
+        }
+
         game.go(dir);
     }
 
@@ -161,7 +168,7 @@ public class TextFacade implements IFacade {
         }
     }
 
-    private void directions() {
+    private String getDirections() {
         StringBuilder sb = new StringBuilder();
         Arrays.stream(Direction.values())
                 .filter(dir -> game.getCurrentRoom().canGo(dir))
@@ -170,7 +177,7 @@ public class TextFacade implements IFacade {
                     sb.append(", ");
                 });
 
-        System.out.println(sb.substring(0, sb.length() - 2));
+        return sb.substring(0, sb.length() - 2);
     }
 
     @Override

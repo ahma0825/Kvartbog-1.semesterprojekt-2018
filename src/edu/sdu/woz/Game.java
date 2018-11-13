@@ -98,8 +98,7 @@ public class Game {
 
     public Room go(Direction direction) {
         if (!currentRoom.canGo(direction)) {
-            System.out.println("You can't go in this direction");
-            return null;
+            throw new RuntimeException("Can't go that direction");
         }
 
         Point point = new Point(
