@@ -173,4 +173,10 @@ public class TextFacade implements IFacade {
         System.out.println(sb.substring(0, sb.length() - 2));
     }
 
+    @Override
+    public void onGameOver() {
+        System.out.println("GAME OVER");
+        System.exit(0);
+    }
+
 }

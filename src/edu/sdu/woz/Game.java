@@ -77,6 +77,7 @@ public class Game {
     public void enterRoom(Room room) {
         currentRoom = room;
         facade.onRoomEnter(room);
+        room.afterEnter();
     }
 
     public List<Item> getInventory() {
@@ -108,5 +109,9 @@ public class Game {
         Room room = getRoom(point);
         enterRoom(room);
         return room;
+    }
+    
+    public void gameOver() {
+        facade.onGameOver();
     }
 }

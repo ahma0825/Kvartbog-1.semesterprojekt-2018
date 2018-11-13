@@ -26,19 +26,23 @@ public class GhostRoom extends Room {
 
     @Override
     public String examine() {
-        if(!game.isIgnited()){
-            game.go(Direction.SOUTH);
+        if (!game.isIgnited()) {
             return "There are weird markings on the door."
-                    +"\nThe room is dusty, all the furniture is covered in white sheets and there's a shotgun on hanging on the wall. "  
-                    +"\nAs u step in the room, a ghost appears shouting "
+                    + "\nThe room is dusty, all the furniture is covered in white sheets and there's a shotgun on hanging on the wall. "
+                    + "\nAs u step in the room, a ghost appears shouting "
                     + modes(BOLD, BG_YELLOW, FG_BLACK) + "THIS IS MY ROOM!" + RESET
-                    +"\nYou get pushed out of the room.";
+                    + "\nYou get pushed out of the room, back into the office.";
         } else {
             return "The room is dusty and all the furniture is covered in white sheets. "
                     + "\nThere's a smiling " + modes(BG_BLUE) + "GHOST" + RESET + " handing you a sawed-off double barrel shotgun.";
         }
     }
-    
-    
-    
+
+    @Override
+    public void afterEnter() {
+        if (!game.isIgnited()) {
+            game.go(Direction.SOUTH);
+        }
+    }
+
 }
