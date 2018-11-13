@@ -30,5 +30,12 @@ public class EntranceRoom extends Room {
             return "You find yourself standing in a grand entrance";
         }
     }
+    
+    @Override
+    public void afterEnter() {
+        if (!game.getInventory().contains(Item.SHOTGUN)) {
+            game.gameOver();
+        }
+    }
 
 }
