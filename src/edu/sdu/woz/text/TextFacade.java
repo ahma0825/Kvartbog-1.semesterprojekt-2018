@@ -25,7 +25,7 @@ public class TextFacade implements IFacade {
         //printWelcome();
 
         println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE)
-                + "Welcome to the Manor Story." + Escapes.RESET);
+                + "Welcome to the Manor Story" + Escapes.RESET);
         println("Type \"dir\" for directions");
         println("Type \"help\" for more info");
 
