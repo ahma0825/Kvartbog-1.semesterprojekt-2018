@@ -54,7 +54,6 @@ public abstract class Room {
     }
 
     public void afterEnter(){
-        
     }
     
     public Room setDirections(Direction... directions) {
