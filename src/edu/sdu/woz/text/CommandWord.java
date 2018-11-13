@@ -1,7 +1,15 @@
 package edu.sdu.woz.text;
 
 public enum CommandWord {
-    GO("go"), QUIT("quit"), HELP("help"), INVENTORY("inventory"), TAKE("take"), ANSWER("answer"), UNKNOWN("?");
+    GO("go"),
+    QUIT("quit"),
+    HELP("help"),
+    INVENTORY("inventory"),
+    TAKE("take"),
+    ANSWER("answer"),
+    IGNITE("ignite"),
+    DIRECTIONS("dir"),
+    UNKNOWN("?");
 
     private String commandString;
 

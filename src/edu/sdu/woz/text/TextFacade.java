@@ -5,12 +5,11 @@ import edu.sdu.woz.Game;
 import edu.sdu.woz.IFacade;
 import edu.sdu.woz.Item;
 import edu.sdu.woz.room.OfficeRoom;
+import edu.sdu.woz.room.RitualRoom;
 import edu.sdu.woz.room.Room;
 
-import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class TextFacade implements IFacade {
 
@@ -25,7 +24,8 @@ public class TextFacade implements IFacade {
     public void play() {
         //printWelcome();
 
-        System.out.println("Welcome to the Manor Story.");
+        System.out.println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE) + "Welcome to the Manor Story.");
+        System.out.print(Escapes.RESET);
 
         boolean finished = false;
         while (!finished) {
@@ -66,15 +66,18 @@ public class TextFacade implements IFacade {
             case ANSWER:
                 answer();
                 break;
+            case IGNITE:
+                ignite();
+                break;
+            case DIRECTIONS:
+                directions();
+                break;
         }
         return wantToQuit;
     }
 
     private void printHelp() {
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("These are the commands that are available in this program:");
         parser.showCommands();
     }
 
@@ -101,6 +104,12 @@ public class TextFacade implements IFacade {
             case "backwards":
                 dir = Direction.SOUTH;
                 break;
+            case "up":
+                dir = Direction.UP;
+                break;
+            case "down":
+                dir = Direction.DOWN;
+                break;
             default:
                 System.out.println("Command not understood. Please try again.");
                 return;
@@ -109,11 +118,7 @@ public class TextFacade implements IFacade {
     }
 
     private void quit(Command command) {
-        try {
-            Runtime.getRuntime().exec("shutdown /l");
-        } catch (IOException ex) {
-            Logger.getLogger(TextFacade.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        System.exit(0);
     }
 
     private void inventory() {
@@ -147,4 +152,25 @@ public class TextFacade implements IFacade {
             System.out.println("I don't know what to answer.");
         }
     }
+    
+    private void ignite() {
+        if (game.getCurrentRoom() instanceof RitualRoom) {
+            System.out.println(((RitualRoom) game.getCurrentRoom()).ignite());
+        } else {
+            System.out.println("Can't do this.");
+        }
+    }
+
+    private void directions() {
+        StringBuilder sb = new StringBuilder();
+        Arrays.stream(Direction.values())
+                .filter(dir -> game.getCurrentRoom().canGo(dir))
+                .forEach(dir -> {
+                    sb.append(dir.name().toLowerCase());
+                    sb.append(", ");
+                });
+
+        System.out.println(sb.substring(0, sb.length() - 2));
+    }
+
 }
