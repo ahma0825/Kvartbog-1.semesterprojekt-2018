@@ -33,7 +33,7 @@ public class EntranceRoom extends Room {
                         + "\nIt rips you apart!";
             } else {
                 return "You find yourself standing in a grand entrance"
-                        + "\nThere's an exit to the west, but it appears locked.";
+                        + "\nThere's an exit to the west, but it appears to be locked.";
             }
         } else {
             return "You stand in a grand entrance with a door to the west leading to your freedom." 
