@@ -179,7 +179,27 @@ Dagsorden: Mød med Erik og derefter få skrevet videre på vores kode og rappor
 
 Referent: Jesper
 
-Tilstede: Erik, Frederik, Jesper, Ahmad og  Kim
+Tilstede: Erik, Frederik, Jesper, Ahmad og Kim
 
 #### Referat
 Vi mødtes og fik en smule overblik over vores kode, hvorefter vi mødtes med Erik og fik styr på hvordan midtvejsseminariet ville foregå. Herefter blev vi enige om hvad alle skulle lave, i form af koden og delte os op hver for sig og kodede derudaf med mulighed for at kontakte hinanden for støtte. Halvvejs igennem dagen begyndte vi også med noget arbejde på rapporten.
+
+## Logbog uge 46
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 18:00
+
+Dagsorden: Forberedelse af præsentation, finpudsning af kode, arbejde på første udkast af aflevering.
+
+Referent: Frederik
+
+Tilstede: Frederik, Jesper, Saq og  Kim
+
+#### Referat
+Vi udarbejde nogle af de sidste features og mangler i vores kode, sådan at vi er mere eller mindre klar til at aflevere.
+Vi nåede at arbejde en smule videre på vores rapport. Vi har besluttet at skrive rapporting i Google Docs, og
+senere overføre det til LaTeX.
+
+Til sidst har vi præsenteret vores projekt foran de andre grupper.
