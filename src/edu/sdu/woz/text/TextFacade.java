@@ -21,31 +21,29 @@ public class TextFacade implements IFacade {
         tf.play();
     }
 
-    public void play() {
+    private void play() {
         //printWelcome();
 
-        System.out.println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE) + "Welcome to the Manor Story.");
+        println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE) + "Welcome to the Manor Story.");
         System.out.print(Escapes.RESET);
 
-        boolean finished = false;
-        while (!finished) {
+        //noinspection InfiniteLoopStatement
+        while (true) {
             Command command = parser.getCommand();
-            finished = processCommand(command);
+            processCommand(command);
         }
-        System.out.println("Thank you for playing. Good bye.");
     }
 
     @Override
     public void onRoomEnter(Room room) {
-        System.out.println(room.examine());
+        println(room.examine());
     }
 
-    private boolean processCommand(Command command) {
-        boolean wantToQuit = false;
+    private void processCommand(Command command) {
         CommandWord commandWord = command.getCommandWord();
         if (commandWord == CommandWord.UNKNOWN) {
-            System.out.println("I don't know what you mean...");
-            return false;
+            println("I don't know what you mean...");
+            return;
         }
         switch (commandWord) {
             case HELP:
@@ -55,7 +53,7 @@ public class TextFacade implements IFacade {
                 goRoom(command);
                 break;
             case QUIT:
-                quit(command);
+                quit();
                 break;
             case INVENTORY:
                 inventory();
@@ -70,21 +68,20 @@ public class TextFacade implements IFacade {
                 ignite();
                 break;
             case DIRECTIONS:
-                System.out.println(getDirections());
+                println(getDirections());
                 break;
         }
-        return wantToQuit;
     }
 
     private void printHelp() {
-        System.out.println("These are the commands that are available in this program:");
+        println("These are the commands that are available in this program:");
         parser.showCommands();
     }
 
     private void goRoom(Command command) {
         Direction dir;
         if (!command.hasSecondWord()) {
-            System.out.println("Go command lacks second word");
+            println("Go command lacks second word");
             return;
         }
         switch (command.getSecondWord()) {
@@ -111,29 +108,30 @@ public class TextFacade implements IFacade {
                 dir = Direction.DOWN;
                 break;
             default:
-                System.out.println("Command not understood. Please try again.");
+                println("Command not understood. Please try again.");
                 return;
         }
 
         if (!game.getCurrentRoom().canGo(dir)) {
-            System.out.println("You can't go in that direction.");
-            System.out.println("Available directions: " + getDirections());
+            println("You can't go in that direction.");
+            println("Available directions: " + getDirections());
             return;
         }
 
         game.go(dir);
     }
 
-    private void quit(Command command) {
+    private void quit() {
+        println("Thank you for playing!");
         System.exit(0);
     }
 
     private void inventory() {
         List<Item> inv = game.getInventory();
         if (inv.isEmpty()) {
-            System.out.println("My inventory is empty.");
+            println("My inventory is empty.");
         } else {
-            System.out.println("I carry these items:");
+            println("I carry these items:");
             inv.forEach(System.out::println);
         }
     }
@@ -141,30 +139,30 @@ public class TextFacade implements IFacade {
     private void take(Command command) {
         Item item = Item.parse(command.getSecondWord());
         if (item == null) {
-            System.out.println("Take what?");
+            println("Take what?");
             return;
         }
         if (game.getCurrentRoom().takeItem(item)) {
-            System.out.println("You took " + item.getDescription());
+            println("You took " + item.getDescription());
             game.getInventory().add(item);
         } else {
-            System.out.println("There's no such item here");
+            println("There's no such item here");
         }
     }
 
     private void answer() {
         if (game.getCurrentRoom() instanceof OfficeRoom) {
-            System.out.println(((OfficeRoom) game.getCurrentRoom()).answer());
+            println(((OfficeRoom) game.getCurrentRoom()).answer());
         } else {
-            System.out.println("I don't know what to answer.");
+            println("I don't know what to answer.");
         }
     }
     
     private void ignite() {
         if (game.getCurrentRoom() instanceof RitualRoom) {
-            System.out.println(((RitualRoom) game.getCurrentRoom()).ignite());
+            println(((RitualRoom) game.getCurrentRoom()).ignite());
         } else {
-            System.out.println("Can't do this.");
+            println("Can't do this.");
         }
     }
 
@@ -182,8 +180,12 @@ public class TextFacade implements IFacade {
 
     @Override
     public void onGameOver() {
-        System.out.println("GAME OVER");
+        println("GAME OVER");
         System.exit(0);
+    }
+    
+    private void println(String x) {
+        println(x);
     }
 
 }
