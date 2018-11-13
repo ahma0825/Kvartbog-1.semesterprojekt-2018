@@ -6,8 +6,11 @@
 package edu.sdu.woz.room;
 
 import edu.sdu.woz.Game;
-import edu.sdu.woz.Item;
-import java.awt.Point;
+
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.awt.*;
 
 /**
  *
@@ -24,8 +27,10 @@ public class OfficeRoom extends Room {
     public String answer() {
         if (!answered){
             answered = true;
+            playSound("/screech.wav");
             return "You pick up the phone, put it to your ear and a spooky sound comes from the phone.";
         } else{
+            playSound("/screech2.wav");
             return "You pick up the phone again and you hear another spooky sound.";
         }
     }
@@ -39,7 +44,19 @@ public class OfficeRoom extends Room {
             return "You're in the office.";
         }
     }
-    
-    
+
+    private void playSound(final String name) {
+        new Thread(() -> {
+            try {
+                Clip clip = AudioSystem.getClip();
+                AudioInputStream inputStream = AudioSystem.getAudioInputStream(
+                        OfficeRoom.class.getResourceAsStream(name));
+                clip.open(inputStream);
+                clip.start();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }).start();
+    }
     
 }
