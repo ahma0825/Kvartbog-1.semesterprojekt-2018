@@ -17,7 +17,9 @@ import java.awt.*;
  * @author jesperisgaard
  */
 public class OfficeRoom extends Room {
-    
+
+    private static final String SCREECH1 = "/screech.wav";
+    private static final String SCREECH2 = "/screech.wav";
     private boolean answered = false;
     
     public OfficeRoom(Game game, Point pos) {
@@ -27,10 +29,10 @@ public class OfficeRoom extends Room {
     public String answer() {
         if (!answered){
             answered = true;
-            playSound("/screech.wav");
+            playSound(SCREECH1);
             return "You pick up the phone, put it to your ear and a spooky sound comes from the phone.";
         } else{
-            playSound("/screech2.wav");
+            playSound(SCREECH2);
             return "You pick up the phone again and you hear another spooky sound.";
         }
     }
@@ -54,7 +56,10 @@ public class OfficeRoom extends Room {
                 clip.open(inputStream);
                 clip.start();
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                // It seems not all JVMs likes the first screech
+                if (toString().equals(SCREECH1)) {
+                    playSound(SCREECH2);
+                }
             }
         }).start();
     }
