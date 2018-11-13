@@ -48,7 +48,7 @@ public class OfficeRoom extends Room {
                 clip.start();
             } catch (Exception e) {
                 // It seems not all JVMs likes the first screech
-                if (toString().equals(SCREECH1)) {
+                if (name.equals(SCREECH1)) {
                     playSound(SCREECH2);
                 }
             }
