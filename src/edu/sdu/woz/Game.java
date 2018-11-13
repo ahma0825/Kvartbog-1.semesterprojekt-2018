@@ -25,7 +25,7 @@ public class Game {
         // Entrance
         putRoom(new EntranceRoom(this, new Point(0, 0)).setDirections(EAST, WEST));
         // End Room~
-        putRoom(new BasicRoom(this, new Point(-1, 0), "You exit the mansion, you are free!").setDirections(EAST));
+        putRoom(new EndRoom(this, new Point(-1, 0)).setDirections(EAST));
         // Dining Room
         putRoom(new BasicRoom(this, new Point(1, 0),
                 "You enter a dining hall, there's a feast going on. " +
