@@ -32,7 +32,8 @@ public class OfficeRoom extends Room {
     
     @Override
     public String examine() {
-        return "Office Room";
+        return "You enter an office. In one side of the room there's a large desk with a revolving chair turned away."
+                +"\nOn the desk is an old rotary phone, ringing endlessly";
     }
     
     

@@ -48,7 +48,7 @@ public class Game {
                 + "\nThe bathtub is filled with blood. "
                 + "\nThere’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST));
         // Darkroom~
-        putRoom(new BasicRoom(this, new Point(3, 1), "BATS fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
+        putRoom(new BasicRoom(this, new Point(3, 1), GO_SCARY + "BATS" + RESET + " fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
         // Ritualroom~
         putRoom(new RitualRoom(this, new Point(3, -1)).setDirections(NORTH, WEST));
 
