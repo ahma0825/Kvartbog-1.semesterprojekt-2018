@@ -185,7 +185,7 @@ public class TextFacade implements IFacade {
     }
     
     private void println(String x) {
-        println(x);
+        System.out.println(x);
     }
 
 }
