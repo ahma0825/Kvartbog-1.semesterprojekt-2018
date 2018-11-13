@@ -46,8 +46,10 @@ public class RoomMapper implements IFacade {
             }
         }
         try {
-            ImageIO.write(img, "PNG", new File("/tmp/rooms.png"));
-            Runtime.getRuntime().exec("feh /tmp/rooms.png").waitFor();
+            File tempFile = File.createTempFile("rooms", "png");
+            ImageIO.write(img, "PNG", tempFile);
+            System.out.println(tempFile.getAbsolutePath());
+            Runtime.getRuntime().exec("feh " + tempFile.getAbsolutePath()).waitFor();
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException("", e);
         }
