@@ -46,7 +46,7 @@ public class RoomMapper implements IFacade {
             }
         }
         try {
-            File tempFile = File.createTempFile("rooms", "png");
+            File tempFile = File.createTempFile("rooms", ".png");
             ImageIO.write(img, "PNG", tempFile);
             System.out.println(tempFile.getAbsolutePath());
             Runtime.getRuntime().exec("feh " + tempFile.getAbsolutePath()).waitFor();
