@@ -24,8 +24,10 @@ public class TextFacade implements IFacade {
     private void play() {
         //printWelcome();
 
-        println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE) + "Welcome to the Manor Story.");
-        System.out.print(Escapes.RESET);
+        println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE)
+                + "Welcome to the Manor Story." + Escapes.RESET);
+        println("Type \"dir\" for directions");
+        println("Type \"help\" for more info");
 
         //noinspection InfiniteLoopStatement
         while (true) {
