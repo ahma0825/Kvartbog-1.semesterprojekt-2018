@@ -29,7 +29,7 @@ public class Game {
         // Dining Room
         putRoom(new BasicRoom(this, new Point(1, 0),
                 "You enter a dining hall, there's a feast going on. " +
-                        "\nAll the participants are " + GO_SCARY + "SKELETONS " + RESET + "\nThere's a trapdoor leading down to a basement"
+                        "\nAll the participants are " + GO_SCARY + "SKELETONS" + RESET + "\nThere's a trapdoor leading down to a basement"
         ).setDirections(NORTH, EAST, WEST, DOWN));
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
