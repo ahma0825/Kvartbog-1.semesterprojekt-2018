@@ -32,8 +32,12 @@ public class OfficeRoom extends Room {
     
     @Override
     public String examine() {
-        return "You enter an office. In one side of the room there's a large desk with a revolving chair turned away."
+        if (!answered){
+        return "You are in an office. In one side of the room there's a large desk with a revolving chair turned away."
                 +"\nOn the desk is an old rotary phone, ringing endlessly";
+        } else{
+            return "You're in the office.";
+        }
     }
     
     
