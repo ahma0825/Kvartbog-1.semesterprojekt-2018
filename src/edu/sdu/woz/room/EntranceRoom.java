@@ -6,8 +6,7 @@ import edu.sdu.woz.Game;
 import edu.sdu.woz.Item;
 import static edu.sdu.woz.Item.KEY;
 import static edu.sdu.woz.Item.SHOTGUN;
-import static edu.sdu.woz.text.Escapes.GO_SCARY;
-import static edu.sdu.woz.text.Escapes.RESET;
+import static edu.sdu.woz.text.Escapes.*;
 import java.awt.Point;
 
 public class EntranceRoom extends Room {
@@ -22,7 +21,11 @@ public class EntranceRoom extends Room {
             return "You enter the grand entrance there's something different."
                     + "Two yellow glowing eyes appear in the dark corner of the room."
                     + "\nSuddenly a " + GO_SCARY + "WEREWOLF " + RESET + "jumps out at you!"
+<<<<<<< HEAD
                     + "\nYou whip out the trusted double barrel shotgun and blow it to smithereens";
+=======
+                    + "\nYou whip out the trusted double barrel shotgun and blow it to smithereens.";
+>>>>>>> bee442a5406fdfd66be26183582e33f107c1b578
         } else if (game.getInventory().contains(KEY) && !game.getInventory().contains(SHOTGUN)){
             return "You enter the grand entrance there's something different."
                     + "\nTwo yellow glowing eyes appear in the dark corner of the room."
