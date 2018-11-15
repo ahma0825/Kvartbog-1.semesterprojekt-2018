@@ -29,14 +29,14 @@ public class Game {
         // Dining Room
         putRoom(new BasicRoom(this, new Point(1, 0),
                 "You enter a dining hall, there's a feast going on. " +
-                        "\nAll the participants are " + GO_SCARY + "SKELETONS" + RESET + "\nThere's a trapdoor leading down to a basement"
+                        "\nAll the participants are " + GO_SCARY + "SKELETONS!" + RESET + "\nThere's a trapdoor leading down to a basement."
         ).setDirections(NORTH, EAST, WEST, DOWN));
         // Room
-        putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty").setDirections(EAST, SOUTH, WEST));
+        putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty.").setDirections(EAST, SOUTH, WEST));
         // Kitchen~
         putRoom(new KitchenRoom(this, new Point(3, 0)).setDirections(NORTH, SOUTH, WEST));
         // Sideroom
-        putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty").setDirections(EAST, SOUTH));
+        putRoom(new BasicRoom(this, new Point(1, 1), "This room is empty.").setDirections(EAST, SOUTH));
         // Basement~
         putRoom(new BasementRoom(this, new Point(1, -1)).setDirections(UP));
         // Ghostroom~
@@ -46,9 +46,9 @@ public class Game {
         // Bathroom~
         putRoom(new BasicRoom(this, new Point(2, -1), "You have entered the bathroom. "
                 + "\nThe bathtub is filled with blood. "
-                + "\nThere’s a mirror. When looked at it, it will show the back of your head. ").setDirections(NORTH, EAST));
+                + "\nThere’s a mirror. When you look at it. It shows the back of your head! ").setDirections(NORTH, EAST));
         // Darkroom~
-        putRoom(new BasicRoom(this, new Point(3, 1), GO_SCARY + "BATS" + RESET + " fly out as you enter and the room is dark, moist and covered in cobwebs").setDirections(SOUTH, WEST));
+        putRoom(new BasicRoom(this, new Point(3, 1), GO_SCARY + "BATS" + RESET + " fly out as you enter and the room is dark, moist and covered in cobwebs.").setDirections(SOUTH, WEST));
         // Ritualroom~
         putRoom(new RitualRoom(this, new Point(3, -1)).setDirections(NORTH, WEST));
 

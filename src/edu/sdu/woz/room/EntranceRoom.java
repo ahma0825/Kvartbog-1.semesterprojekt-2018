@@ -32,7 +32,7 @@ public class EntranceRoom extends Room {
                         + "\nSuddenly a " + GO_SCARY + "WEREWOLF " + RESET + "jumps out at you!"
                         + "\nIt rips you apart!";
             } else {
-                return "You find yourself standing in a grand entrance"
+                return "You find yourself standing in a grand entrance."
                         + "\nThere's an exit to the west, but it appears to be locked.";
             }
         } else {
