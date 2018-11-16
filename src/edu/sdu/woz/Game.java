@@ -107,7 +107,7 @@ public class Game {
         enterRoom(room);
         return room;
     }
-    
+
     public void gameOver() {
         facade.onGameOver();
     }

@@ -26,21 +26,21 @@ public class RoomMapper implements IFacade {
 
         for (Room r : game.getMap().values()) {
             Point pos = r.getPosition();
-            pos = new Point(pos.x + offset, - pos.y + offset);
+            pos = new Point(pos.x + offset, -pos.y + offset);
 
             graphics.setColor(Color.white);
             graphics.drawRect(pos.x * roomSize, pos.y * roomSize, roomSize - 1, roomSize - 1);
             graphics.drawRect(pos.x * roomSize + 1, pos.y * roomSize + 1, roomSize - 3, roomSize - 3);
 
             graphics.setColor(Color.red);
-            graphics.drawString(r.getClass().getSimpleName(), pos.x*roomSize + roomSize/4, pos.y*roomSize+roomSize/2);
+            graphics.drawString(r.getClass().getSimpleName(), pos.x * roomSize + roomSize / 4, pos.y * roomSize + roomSize / 2);
 
             graphics.setColor(Color.green);
-            Point center = new Point(pos.x * roomSize + roomSize/2, pos.y * roomSize + roomSize/2);
+            Point center = new Point(pos.x * roomSize + roomSize / 2, pos.y * roomSize + roomSize / 2);
             for (Direction dir : Direction.values()) {
                 if (!r.canGo(dir)) continue;
-                graphics.fillOval(center.x - 2 + dir.getDelta().x * (roomSize/4),
-                        center.y - 2 - dir.getDelta().y * (roomSize/4),
+                graphics.fillOval(center.x - 2 + dir.getDelta().x * (roomSize / 4),
+                        center.y - 2 - dir.getDelta().y * (roomSize / 4),
                         5,
                         5);
             }

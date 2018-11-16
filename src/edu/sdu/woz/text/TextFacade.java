@@ -159,7 +159,7 @@ public class TextFacade implements IFacade {
             println("I don't know what to answer.");
         }
     }
-    
+
     private void ignite() {
         if (game.getCurrentRoom() instanceof RitualRoom) {
             println(((RitualRoom) game.getCurrentRoom()).ignite());
@@ -185,7 +185,7 @@ public class TextFacade implements IFacade {
         println("GAME OVER");
         System.exit(0);
     }
-    
+
     private void println(String x) {
         System.out.println(x);
     }

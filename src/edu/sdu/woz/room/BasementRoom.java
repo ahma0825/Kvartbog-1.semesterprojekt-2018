@@ -37,12 +37,12 @@ public class BasementRoom extends Room {
                         + "\nThe only way out of this basement is back up the stairs.";
                 //Possibly remove vampire when walking in again
             }
-        } else{
+        } else {
             return "You walk down into the basement again. "
-                    +"\nIt's quite damp, but there's nothing down here.";
+                    + "\nIt's quite damp, but there's nothing down here.";
         }
     }
-    
+
     @Override
     public void afterEnter() {
         if (!game.getInventory().contains(Item.GARLIC)) {

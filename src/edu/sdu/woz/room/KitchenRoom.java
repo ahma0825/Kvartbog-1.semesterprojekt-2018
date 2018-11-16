@@ -7,10 +7,10 @@ package edu.sdu.woz.room;
 
 import edu.sdu.woz.Game;
 import edu.sdu.woz.Item;
-import java.awt.Point;
+
+import java.awt.*;
 
 /**
- *
  * @author jesperisgaard
  */
 public class KitchenRoom extends Room {
@@ -22,14 +22,13 @@ public class KitchenRoom extends Room {
 
     @Override
     public String examine() {
-        if(items.contains(Item.GARLIC)){
+        if (items.contains(Item.GARLIC)) {
             return "You enter the kitchen, knives and plates are all over the place and covered in blood. "
                     + "\nThe only thing that isn't red is a string of garlic.";
         } else {
             return "You enter the kitchen, knives and plates are all over the place and covered in blood.";
         }
     }
-    
-    
-    
+
+
 }

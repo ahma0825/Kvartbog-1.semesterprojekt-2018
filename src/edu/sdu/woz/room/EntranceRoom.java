@@ -1,13 +1,16 @@
 package edu.sdu.woz.room;
 
 import edu.sdu.woz.Direction;
-import static edu.sdu.woz.Direction.*;
 import edu.sdu.woz.Game;
 import edu.sdu.woz.Item;
+
+import java.awt.*;
+
+import static edu.sdu.woz.Direction.WEST;
 import static edu.sdu.woz.Item.KEY;
 import static edu.sdu.woz.Item.SHOTGUN;
-import static edu.sdu.woz.text.Escapes.*;
-import java.awt.Point;
+import static edu.sdu.woz.text.Escapes.GO_SCARY;
+import static edu.sdu.woz.text.Escapes.RESET;
 
 public class EntranceRoom extends Room {
 
@@ -36,7 +39,7 @@ public class EntranceRoom extends Room {
                         + "\nThere's an exit to the west, but it appears to be locked.";
             }
         } else {
-            return "You stand in a grand entrance with a door to the west leading to your freedom." 
+            return "You stand in a grand entrance with a door to the west leading to your freedom."
                     + "\nOn the floor lies the remains of what was once a werewolf.";
         }
     }

@@ -53,9 +53,9 @@ public abstract class Room {
         return items.remove(item);
     }
 
-    public void afterEnter(){
+    public void afterEnter() {
     }
-    
+
     public Room setDirections(Direction... directions) {
         allowedDirections = Arrays.asList(directions);
         return this;
