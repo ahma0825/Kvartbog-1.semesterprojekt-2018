@@ -203,3 +203,39 @@ Vi nåede at arbejde en smule videre på vores rapport. Vi har besluttet at skri
 senere overføre det til LaTeX.
 
 Til sidst har vi præsenteret vores projekt foran de andre grupper.
+
+## Logbog uge 47
+### Tirsdag - Vejledermøde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:30-11:00
+
+Forberedelse: Ingen forberedelse til idag
+
+Dagsorden: Gennemgå GUI for World of Zuul projekt.
+
+Referent: Saq
+
+Tilstede: Erik, Frederik, Kim, Saq.
+
+#### Referat
+Vi mødtes med Erik og snakkede omkring JavaFX og scenebuilder. Vi snakkede omkring anvendelsen af scenebuilder til vores projekt og gik kort igennem hvordan det virkede. Vi snakkede også omkring rapporten og hvordan den skulle inddeles.
+
+## Tirsdag - Projektarbejde
+
+Sted: Ø27-605-2
+
+Tidspunkt: 11:00-xx:xx
+
+Forberedelse: Ingen forberedelse.
+
+Dagsorden: Gå igennem GUI elementer der skal implementeres i vores kode og arbejde videre på rapport. 
+
+Tilstede: Frederik, Kim, Saq.
+
+Referent: Saq
+
+### Referat:
+Vi startede op med at tale omkring hvordan vores GUI skulle se ud for vores projekt og lavede et rough draft på en tavle. Derefter gik vi i gang med at kigge afsnit i vores første iteration af rapporten igennem og derefter arbejde på rapporten efter den blev overført fra google drive til LaTeX
+
