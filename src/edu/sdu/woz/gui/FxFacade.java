@@ -12,7 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.text.Text;
+import javafx.scene.control.TextArea;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,7 +23,7 @@ public class FxFacade implements Initializable, IFacade {
     @FXML
     private Button specialButton;
     @FXML
-    private Text terminal;
+    private TextArea terminal;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
