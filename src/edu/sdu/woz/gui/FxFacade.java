@@ -18,6 +18,7 @@ import javafx.scene.control.TextArea;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.scene.image.ImageView;
 
 @SuppressWarnings("unused")
 public class FxFacade implements Initializable, IFacade {
@@ -38,6 +39,14 @@ public class FxFacade implements Initializable, IFacade {
     private Button goEast;
     @FXML
     private Button take;
+    @FXML
+    private ImageView garlic;
+    @FXML
+    private ImageView key;
+    @FXML
+    private ImageView shotgun;
+    @FXML
+    private ImageView lighter;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
