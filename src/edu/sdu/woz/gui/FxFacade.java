@@ -5,6 +5,7 @@
  */
 package edu.sdu.woz.gui;
 
+import edu.sdu.woz.Direction;
 import edu.sdu.woz.Game;
 import edu.sdu.woz.IFacade;
 import edu.sdu.woz.room.Room;
@@ -36,19 +37,22 @@ public class FxFacade implements Initializable, IFacade {
 
     @FXML
     private void onNorth(ActionEvent event) {
-        
+        game.go(Direction.NORTH);
     }
 
     @FXML
     private void onSouth(ActionEvent event) {
+        game.go(Direction.SOUTH);
     }
 
     @FXML
     private void onWest(ActionEvent event) {
+        game.go(Direction.WEST);
     }
 
     @FXML
     private void onEast(ActionEvent event) {
+        game.go(Direction.EAST);
     }
 
     @Override
@@ -58,6 +62,6 @@ public class FxFacade implements Initializable, IFacade {
 
     @Override
     public void onGameOver() {
-
+        game.gameOver();
     }
 }
