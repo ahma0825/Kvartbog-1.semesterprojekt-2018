@@ -3,3 +3,7 @@
     -fx-border-radius: 10px;
     -fx-border-width: 2;
 }
+
+#terminal {
+    -fx-font-family: "Fira Code Retina", "Courier New";
+}
