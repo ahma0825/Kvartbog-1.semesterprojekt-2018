@@ -36,6 +36,7 @@ public class FxFacade implements Initializable, IFacade {
 
     @FXML
     private void onNorth(ActionEvent event) {
+        
     }
 
     @FXML
