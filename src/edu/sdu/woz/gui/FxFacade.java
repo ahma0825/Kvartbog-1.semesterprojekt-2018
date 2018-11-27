@@ -25,6 +25,14 @@ public class FxFacade implements Initializable, IFacade {
     private Button specialButton;
     @FXML
     private TextArea terminal;
+    @FXML
+    private Button goNorth;
+    @FXML
+    private Button goSouth;
+    @FXML
+    private Button goWest;
+    @FXML
+    private Button goEast;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -58,6 +66,30 @@ public class FxFacade implements Initializable, IFacade {
     @Override
     public void onRoomEnter(Room room) {
         terminal.setText(terminal.getText() + room.examine() + "\n");
+        
+        if (room.canGo(Direction.NORTH)) {
+            goNorth.setDisable(false);
+        } else {
+            goNorth.setDisable(true);
+        }
+        
+        if (room.canGo(Direction.SOUTH)) {
+            goSouth.setDisable(false);
+        } else {
+            goSouth.setDisable(true);
+        }
+        
+        if (room.canGo(Direction.WEST)) {
+            goWest.setDisable(false);
+        } else {
+            goWest.setDisable(true);
+        }
+        
+        if (room.canGo(Direction.EAST)) {
+            goEast.setDisable(false);
+        } else {
+            goEast.setDisable(true);
+        }
     }
 
     @Override
