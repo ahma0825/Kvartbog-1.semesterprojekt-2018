@@ -4,23 +4,23 @@ import edu.sdu.woz.Direction;
 import edu.sdu.woz.Game;
 import javafx.scene.control.Button;
 
-public class SpecialButtonController {
+class SpecialButtonController {
 
     private Button specialButton;
     private Game game;
     private Runnable currentAction = null;
 
-    public SpecialButtonController(Button specialButton, Game game) {
+    SpecialButtonController(Button specialButton, Game game) {
         this.specialButton = specialButton;
         this.game = game;
         specialButton.setVisible(false);
     }
 
-    public void onClick() {
+    void onClick() {
         currentAction.run();
     }
 
-    public void update() {
+    void update() {
         if (game.getCurrentRoom().canGo(Direction.DOWN)) {
             specialButton.setVisible(true);
             specialButton.setText("Go down");
@@ -32,6 +32,9 @@ public class SpecialButtonController {
             currentAction = () -> game.go(Direction.UP);
             return;
         }
+
+        specialButton.setVisible(false);
+        currentAction = null;
     }
 
 }
