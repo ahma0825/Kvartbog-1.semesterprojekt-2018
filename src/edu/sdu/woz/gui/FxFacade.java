@@ -5,46 +5,58 @@
  */
 package edu.sdu.woz.gui;
 
+import edu.sdu.woz.Game;
 import edu.sdu.woz.IFacade;
 import edu.sdu.woz.room.Room;
-import javafx.application.Application;
-import static javafx.application.Application.launch;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.text.TextFlow;
 
-/**
- *
- * @author jesperisgaard
- */
-public class FxFacade extends Application implements IFacade {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+@SuppressWarnings("unused")
+public class FxFacade implements Initializable, IFacade {
+    private Game game = null;
+    @FXML
+    private Button specialButton;
+    @FXML
+    private TextFlow terminal;
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
-        Scene scene = new Scene(root);
+    public void initialize(URL url, ResourceBundle rb) {
+        game = new Game(this);
+    }    
 
-        stage.setScene(scene);
-        stage.show();
+    @FXML
+    private void onSpecial(ActionEvent event) {
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
+    @FXML
+    private void onNorth(ActionEvent event) {
     }
-    
+
+    @FXML
+    private void onSouth(ActionEvent event) {
+    }
+
+    @FXML
+    private void onWest(ActionEvent event) {
+    }
+
+    @FXML
+    private void onEast(ActionEvent event) {
+    }
+
     @Override
     public void onRoomEnter(Room room) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
     public void onGameOver() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
-    
 }
