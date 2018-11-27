@@ -78,26 +78,14 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </GridPane.margin>
                      <children>
-                        <ImageView fx:id="garlic" fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@/garlic.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="key" fitHeight="121.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
-                           <image>
-                              <Image url="@/key.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="shotgun" fitHeight="124.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
-                           <image>
-                              <Image url="@/shotgun.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="lighter" fitHeight="100.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
-                           <image>
-                              <Image url="@/lighter.png" />
-                           </image>
-                        </ImageView>
+                         <ImageView fx:id="item1" fitHeight="85.0" fitWidth="66.0" pickOnBounds="true"
+                                    preserveRatio="true"/>
+                         <ImageView fx:id="item2" fitHeight="121.0" fitWidth="67.0" pickOnBounds="true"
+                                    preserveRatio="true" GridPane.columnIndex="1"/>
+                         <ImageView fx:id="item3" fitHeight="124.0" fitWidth="64.0" pickOnBounds="true"
+                                    preserveRatio="true" GridPane.columnIndex="2"/>
+                         <ImageView fx:id="item4" fitHeight="100.0" fitWidth="66.0" pickOnBounds="true"
+                                    preserveRatio="true" GridPane.columnIndex="3"/>
                      </children>
                   </GridPane>
                   <Button fx:id="take" onAction="#onTake" disable="true" mnemonicParsing="false" text="Take" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />

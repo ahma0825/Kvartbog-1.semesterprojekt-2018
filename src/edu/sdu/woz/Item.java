@@ -1,17 +1,19 @@
 package edu.sdu.woz;
 
 public enum Item {
-    GARLIC("Garlic", "a string of garlic"),
-    KEY("Key", "an item that grants you access"),
-    SHOTGUN("Shotgun", "a badass sawed-off shotgun"),
-    LIGHTER("Lighter", "a Zippo lighter");
+    GARLIC("Garlic", "a string of garlic", "/garlic"),
+    KEY("Key", "an item that grants you access", "/key"),
+    SHOTGUN("Shotgun", "a badass sawed-off shotgun", "/shotgun"),
+    LIGHTER("Lighter", "a Zippo lighter", "/lighter");
 
     private final String name;
     private final String description;
+    private final String imageUrl;
 
-    Item(String name, String description) {
+    Item(String name, String description, String imageUrl) {
         this.name = name;
         this.description = description;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -20,6 +22,10 @@ public enum Item {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 
     @Override

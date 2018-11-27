@@ -15,11 +15,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
-import javafx.scene.image.ImageView;
 
 @SuppressWarnings("unused")
 public class FxFacade implements Initializable, IFacade {
@@ -41,18 +44,23 @@ public class FxFacade implements Initializable, IFacade {
     @FXML
     private Button take;
     @FXML
-    private ImageView garlic;
+    private ImageView item1;
     @FXML
-    private ImageView key;
+    private ImageView item2;
     @FXML
-    private ImageView shotgun;
+    private ImageView item3;
     @FXML
-    private ImageView lighter;
+    private ImageView item4;
+    private List<ImageView> availableSlots = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         game = new Game(this);
         specialButtonController = new SpecialButtonController(specialButton, game);
+        availableSlots.add(item1);
+        availableSlots.add(item2);
+        availableSlots.add(item3);
+        availableSlots.add(item4);
     }    
 
     @FXML
@@ -88,6 +96,7 @@ public class FxFacade implements Initializable, IFacade {
         println("Took " + item.getDescription());
         specialButtonController.update();
         take.setDisable(true);
+        availableSlots.remove(0).setImage(new Image(item.getImageUrl()));
     }
 
     @Override
