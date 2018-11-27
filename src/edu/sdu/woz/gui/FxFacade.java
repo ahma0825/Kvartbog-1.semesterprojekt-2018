@@ -8,6 +8,7 @@ package edu.sdu.woz.gui;
 import edu.sdu.woz.Direction;
 import edu.sdu.woz.Game;
 import edu.sdu.woz.IFacade;
+import edu.sdu.woz.Item;
 import edu.sdu.woz.room.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -70,9 +71,19 @@ public class FxFacade implements Initializable, IFacade {
         game.go(Direction.EAST);
     }
 
+    @FXML
+    private void onTake(ActionEvent event) {
+        Room room = game.getCurrentRoom();
+        Item item = room.getItems().get(0);
+        room.takeItem(item);
+        println("Took " + item.getDescription());
+        specialButtonController.update();
+        take.setDisable(true);
+    }
+
     @Override
     public void onRoomEnter(Room room) {
-        terminal.setText(terminal.getText() + room.examine() + "\n");
+        println(room.examine());
         
         if (room.canGo(Direction.NORTH)) {
             goNorth.setDisable(false);
@@ -97,6 +108,9 @@ public class FxFacade implements Initializable, IFacade {
         } else {
             goEast.setDisable(true);
         }
+
+        take.setDisable(room.getItems().isEmpty());
+
         if (game != null) specialButtonController.update();
     }
 
@@ -107,5 +121,9 @@ public class FxFacade implements Initializable, IFacade {
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void println(String s) {
+        terminal.setText(terminal.getText() + s + "\n");
     }
 }

@@ -112,7 +112,7 @@
                            </graphic></Button>
                      </children>
                   </GridPane>
-                  <Button fx:id="take" disable="true" mnemonicParsing="false" text="Take" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                  <Button fx:id="take" onAction="#onTake" disable="true" mnemonicParsing="false" text="Take" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
                </children>
                <GridPane.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
