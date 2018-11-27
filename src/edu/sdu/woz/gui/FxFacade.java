@@ -33,6 +33,8 @@ public class FxFacade implements Initializable, IFacade {
     private Button goWest;
     @FXML
     private Button goEast;
+    @FXML
+    private Button take;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
