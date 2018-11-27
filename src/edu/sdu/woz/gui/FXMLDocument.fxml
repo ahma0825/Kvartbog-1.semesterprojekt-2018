@@ -82,7 +82,7 @@
                            <graphic>
                               <ImageView fitHeight="50.0" fitWidth="50.0">
                                  <image>
-                                    <Image url="@../../../../../resources/garlic.png" />
+                                    <Image url="@/garlic.png" />
                                  </image>
                               </ImageView>
                            </graphic></Button>
@@ -90,7 +90,7 @@
                            <graphic>
                               <ImageView fitHeight="50.0" fitWidth="50.0">
                                  <image>
-                                    <Image url="@../../../../../resources/key.png" />
+                                    <Image url="@/key.png" />
                                  </image>
                               </ImageView>
                            </graphic></Button>
@@ -98,7 +98,7 @@
                            <graphic>
                               <ImageView fitHeight="50.0" fitWidth="50.0">
                                  <image>
-                                    <Image url="@../../../../../resources/shotgun.png" />
+                                    <Image url="@/shotgun.png" />
                                  </image>
                               </ImageView>
                            </graphic></Button>
@@ -106,7 +106,7 @@
                            <graphic>
                               <ImageView fitHeight="50.0" fitWidth="50.0">
                                  <image>
-                                    <Image url="@../../../../../resources/lighter.png" />
+                                    <Image url="@/lighter.png" />
                                  </image>
                               </ImageView>
                            </graphic></Button>
