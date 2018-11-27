@@ -11,16 +11,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.text.TextFlow;
 
 /**
  * FXML Controller class
  *
- * @author jesperisgaard
+ * @author KV
  */
 public class FXMLDocumentController implements Initializable {
     @FXML
     private Button specialButton;
+    @FXML
+    private TextFlow terminal;
 
     /**
      * Initializes the controller class.
@@ -49,6 +51,5 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void onEast(ActionEvent event) {
     }
-
     
 }
