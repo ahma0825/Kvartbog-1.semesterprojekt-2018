@@ -20,9 +20,7 @@ import javafx.scene.control.Label;
  */
 public class FXMLDocumentController implements Initializable {
     @FXML
-    private Button button;
-    @FXML
-    private Label label;
+    private Button specialButton;
 
     /**
      * Initializes the controller class.
@@ -33,7 +31,24 @@ public class FXMLDocumentController implements Initializable {
     }    
 
     @FXML
-    private void handleButtonAction(ActionEvent event) {
+    private void onSpecial(ActionEvent event) {
     }
+
+    @FXML
+    private void onNorth(ActionEvent event) {
+    }
+
+    @FXML
+    private void onSouth(ActionEvent event) {
+    }
+
+    @FXML
+    private void onWest(ActionEvent event) {
+    }
+
+    @FXML
+    private void onEast(ActionEvent event) {
+    }
+
     
 }
