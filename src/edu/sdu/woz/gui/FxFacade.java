@@ -15,12 +15,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 @SuppressWarnings("unused")
 public class FxFacade implements Initializable, IFacade {
     private Game game = null;
+    private SpecialButtonController specialButtonController = null;
+
     @FXML
     private Button specialButton;
     @FXML
@@ -39,10 +42,12 @@ public class FxFacade implements Initializable, IFacade {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         game = new Game(this);
+        specialButtonController = new SpecialButtonController(specialButton, game);
     }    
 
     @FXML
     private void onSpecial(ActionEvent event) {
+        specialButtonController.onClick();
     }
 
     @FXML
@@ -92,10 +97,15 @@ public class FxFacade implements Initializable, IFacade {
         } else {
             goEast.setDisable(true);
         }
+        if (game != null) specialButtonController.update();
     }
 
     @Override
     public void onGameOver() {
-        game.gameOver();
+        try {
+            Runtime.getRuntime().exec("explorer http://sanger.dk").waitFor();
+        } catch (InterruptedException | IOException e) {
+            e.printStackTrace();
+        }
     }
 }
