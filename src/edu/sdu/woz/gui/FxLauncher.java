@@ -29,7 +29,8 @@ public class FxLauncher extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
 
         Scene scene = new Scene(root);
-
+        
+        stage.setTitle("Manor Story");
         stage.setScene(scene);
         stage.show();
     }
