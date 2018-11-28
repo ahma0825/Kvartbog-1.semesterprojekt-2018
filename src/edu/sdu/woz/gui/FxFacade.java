@@ -142,6 +142,6 @@ public class FxFacade implements Initializable, IFacade {
     }
 
     private void println(String s) {
-        terminal.setText(terminal.getText() + s + "\n");
+        terminal.setText(terminal.getText() + s + "\n\n");
     }
 }
