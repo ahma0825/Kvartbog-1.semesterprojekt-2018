@@ -6,6 +6,7 @@
 
 #terminal {
     -fx-font-family: "Fira Code Retina", "Courier New";
+    -fx-font-weight: bold;
     -fx-text-fill: red;
 }
 
