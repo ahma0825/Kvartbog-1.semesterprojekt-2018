@@ -1,7 +1,7 @@
 .component {
     -fx-border-color: black;
     -fx-border-radius: 10px;
-    -fx-border-width: 2;
+    -fx-border-width: 3;
 }
 
 #terminal {
@@ -11,14 +11,14 @@
 }
 
 .background {
-    -fx-background-image: url("file:resources/night.png");
+    -fx-background-image: url("file:resources/moon.png");
     -fx-background-repeat: stretch;   
     -fx-background-size: auto;
     -fx-background-position: center center;
 }
 
 .text-area {
-    -fx-background-color: rgba(53,89,119,0.4);
+    -fx-background-color: rgba(0,0,0,0.3);
 }
 
 .text-area .scroll-pane {
