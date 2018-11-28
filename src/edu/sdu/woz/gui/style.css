@@ -32,3 +32,12 @@
 .text-area .scroll-pane .content{
     -fx-background-color: transparent;
 }
+
+.buttonWithImage {
+    -fx-background-image: url("file:resources/bat2.png");
+    -fx-background-size: 65px;
+    -fx-background-position: center;
+    -fx-text-fill:#ffff00;
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+}
