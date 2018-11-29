@@ -44,7 +44,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="specialButton" mnemonicParsing="false" onAction="#onSpecial" text="Special" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="specialButton" mnemonicParsing="false" onAction="#onSpecial" style="-fx-font-weight: bold;" text="Special" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                   <Button fx:id="goNorth" mnemonicParsing="false" onAction="#onNorth" prefHeight="30.0" prefWidth="65.0" styleClass="buttonWithImage" stylesheets="@style.css" text="North" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                   <Button fx:id="goSouth" mnemonicParsing="false" onAction="#onSouth" prefHeight="30.0" prefWidth="65.0" styleClass="buttonWithImage" stylesheets="@style.css" text="South" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                   <Button fx:id="goWest" mnemonicParsing="false" onAction="#onWest" prefHeight="30.0" prefWidth="65.0" styleClass="buttonWithImage" stylesheets="@style.css" text="West" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
@@ -98,7 +98,7 @@
                            </image></ImageView>
                      </children>
                   </GridPane>
-                  <Button fx:id="take" disable="true" mnemonicParsing="false" onAction="#onTake" text="Take" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="take" disable="true" mnemonicParsing="false" onAction="#onTake" style="-fx-font-weight: bold;" text="Take" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                </children>
                <GridPane.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
