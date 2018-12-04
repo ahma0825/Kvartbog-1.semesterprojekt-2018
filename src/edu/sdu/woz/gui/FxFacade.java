@@ -93,6 +93,7 @@ public class FxFacade implements Initializable, IFacade {
         Room room = game.getCurrentRoom();
         Item item = room.getItems().get(0);
         room.takeItem(item);
+        game.getInventory().add(item);
         println("Took " + item.getDescription());
         specialButtonController.update();
         take.setDisable(true);
