@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -30,6 +31,7 @@ public class FxLauncher extends Application {
 
         Scene scene = new Scene(root);
         
+        stage.getIcons().add(new Image("/images/vampire.png"));
         stage.setTitle("Manor Story");
         stage.setScene(scene);
         stage.show();
