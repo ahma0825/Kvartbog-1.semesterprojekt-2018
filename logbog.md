@@ -257,3 +257,18 @@ Vi startede med at diskutere planer for vores GUI og blev enige om hvad hvordan 
 
 Herefter fik vi kodet GUI'en sammen som en samlet gruppe. Hvis der opstod et tidspunkt hvor en person ikke havde noget at lave på GUI'en, begyndte vedkommende at skrive på rapporten indtil der opstod noget de kunne lave på GUI'en, hvorefter vedkommende returnerede til arbejde på GUI'en. 
 
+## Logbog uge 49
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Lav videre på GUI og orientering om projektaflevering og eksamen
+
+Referent: Kim
+
+Tilstede: Frederik, Jesper, Saq og Kim
+
+#### Referat
+Vi fik lavet videre på vores GUI, hvor vi fik lavet en lille omstrukturering af vores pakker, og vi arbejdede videre på at få vores inventory system til at fungere med billeder. Fra 12.00 til 13.00 tog vi til orientering om projektaflevering og eksamen i U110. Vi brugte resten af tiden tiden på at skrive videre på rapporten, især indledning og hovedtekst.
