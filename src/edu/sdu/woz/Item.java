@@ -1,10 +1,10 @@
 package edu.sdu.woz;
 
 public enum Item {
-    GARLIC("Garlic", "a string of garlic", "/garlic"),
-    KEY("Key", "an item that grants you access", "/key"),
-    SHOTGUN("Shotgun", "a badass sawed-off shotgun", "/shotgun"),
-    LIGHTER("Lighter", "a Zippo lighter", "/lighter");
+    GARLIC("Garlic", "a string of garlic", "/images/garlic.png"),
+    KEY("Key", "an item that grants you access", "/images/key.png"),
+    SHOTGUN("Shotgun", "a badass sawed-off shotgun", "/images/shotgun.png"),
+    LIGHTER("Lighter", "a Zippo lighter", "/images/lighter.png");
 
     private final String name;
     private final String description;
