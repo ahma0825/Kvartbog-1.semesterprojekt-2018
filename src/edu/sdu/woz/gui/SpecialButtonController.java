@@ -8,15 +8,19 @@ import edu.sdu.woz.room.RitualRoom;
 import edu.sdu.woz.room.Room;
 import javafx.scene.control.Button;
 
+import java.util.function.Consumer;
+
 class SpecialButtonController {
 
     private Button specialButton;
+    private Consumer<String> println;
     private Game game;
     private Runnable currentAction = null;
 
-    SpecialButtonController(Button specialButton, Game game) {
+    SpecialButtonController(Button specialButton, Game game, Consumer<String> println) {
         this.specialButton = specialButton;
         this.game = game;
+        this.println = println;
         specialButton.setVisible(false);
     }
 
@@ -35,10 +39,13 @@ class SpecialButtonController {
             currentAction = () -> game.go(Direction.UP);
         } else if (room instanceof OfficeRoom) {
             specialButton.setText("Answer phone");
-            currentAction = ((OfficeRoom) room)::answer;
+            currentAction = () -> println.accept(((OfficeRoom) room).answer());
         } else if (room instanceof RitualRoom && game.getInventory().contains(Item.LIGHTER)) {
             specialButton.setText("Ignite");
-            currentAction = ((RitualRoom) room)::ignite;
+            currentAction = () -> {
+                println.accept(((RitualRoom) room).ignite());
+                update();
+            };
         } else {
             specialButton.setVisible(false);
             currentAction = null;

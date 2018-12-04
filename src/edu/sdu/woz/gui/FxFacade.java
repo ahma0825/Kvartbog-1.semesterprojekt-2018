@@ -56,7 +56,7 @@ public class FxFacade implements Initializable, IFacade {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         game = new Game(this);
-        specialButtonController = new SpecialButtonController(specialButton, game);
+        specialButtonController = new SpecialButtonController(specialButton, game, this::println);
         availableSlots.add(item1);
         availableSlots.add(item2);
         availableSlots.add(item3);
