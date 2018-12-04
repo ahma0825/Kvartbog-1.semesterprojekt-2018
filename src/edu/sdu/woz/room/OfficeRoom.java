@@ -9,8 +9,8 @@ import java.awt.*;
 
 public class OfficeRoom extends Room {
 
-    private static final String SCREECH1 = "/screech.wav";
-    private static final String SCREECH2 = "/screech2.wav";
+    private static final String SCREECH1 = "/audio/screech.wav";
+    private static final String SCREECH2 = "/audio/screech2.wav";
     private boolean answered = false;
 
     public OfficeRoom(Game game, Point pos) {
