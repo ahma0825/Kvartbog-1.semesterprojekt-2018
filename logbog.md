@@ -239,3 +239,21 @@ Referent: Saq
 ### Referat:
 Vi startede op med at tale omkring hvordan vores GUI skulle se ud for vores projekt og lavede et rough draft på en tavle. Derefter gik vi i gang med at kigge afsnit i vores første iteration af rapporten igennem og derefter arbejde på rapporten efter den blev overført fra google drive til LaTeX
 
+## Logbog uge 48
+
+### Tirsdag
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Arbejdes med GUI og rapporten fortsættes med
+
+Referent: Jesper
+
+Tilstede: Frederik, Jesper, Saq og Kim
+
+Referat:
+Vi startede med at diskutere planer for vores GUI og blev enige om hvad hvordan det skulle se ud og hvem der skulle lave hvad.
+
+Herefter fik vi kodet GUI'en sammen som en samlet gruppe. Hvis der opstod et tidspunkt hvor en person ikke havde noget at lave på GUI'en, begyndte vedkommende at skrive på rapporten indtil der opstod noget de kunne lave på GUI'en, hvorefter vedkommende returnerede til arbejde på GUI'en. 
+
