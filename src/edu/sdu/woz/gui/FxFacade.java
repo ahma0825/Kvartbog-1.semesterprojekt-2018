@@ -13,12 +13,12 @@ import edu.sdu.woz.room.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -135,11 +135,10 @@ public class FxFacade implements Initializable, IFacade {
 
     @Override
     public void onGameOver() {
-        try {
-            Runtime.getRuntime().exec("explorer http://sanger.dk").waitFor();
-        } catch (InterruptedException | IOException e) {
-            e.printStackTrace();
-        }
+        Alert alert = new Alert(Alert.AlertType.INFORMATION, "You are dead");
+        alert.setResizable(false);
+        alert.setOnCloseRequest(__ -> System.exit(0));
+        alert.show();
     }
 
     private void println(String s) {
