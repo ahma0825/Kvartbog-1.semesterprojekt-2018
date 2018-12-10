@@ -65,4 +65,8 @@ public class Escapes {
         toScary = modes(BOLD, UNDERSCORE, BLINK, FG_RED);
         reset = modes(0);
     }
+
+    public static boolean isEnabled() {
+        return enabled;
+    }
 }

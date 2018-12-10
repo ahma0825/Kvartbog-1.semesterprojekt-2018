@@ -18,6 +18,19 @@ public class TextFacade implements IFacade {
 
     public static void main(String[] args) {
         Escapes.setEnabled(true);
+
+        for (String arg : args) {
+            if (arg.equals("-noAnsi")) {
+                Escapes.setEnabled(false);
+            }
+        }
+
+        if (Escapes.isEnabled()) {
+            System.out.println(Escapes.modes(Escapes.FG_BLUE) +
+                    "ANSI escapes are enabled. If the text looks garbled," +
+                    " use the '-noAnsi' argument to disable it." + Escapes.reset);
+        }
+
         TextFacade tf = new TextFacade();
         tf.play();
     }
