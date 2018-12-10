@@ -52,7 +52,7 @@ public class FxFacade implements Initializable, IFacade {
     @FXML
     private ImageView item4;
     private List<ImageView> availableSlots = new ArrayList<>();
-
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         game = new Game(this);
@@ -152,4 +152,5 @@ public class FxFacade implements Initializable, IFacade {
     private void println(String s) {
         terminal.setText(terminal.getText() + s + "\n");
     }
+    
 }
