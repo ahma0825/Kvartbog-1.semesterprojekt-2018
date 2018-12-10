@@ -22,11 +22,11 @@ public class GhostRoom extends Room {
             return "There are weird markings on the door."
                     + "\nThe room is dusty, all the furniture is covered in white sheets and there's a shotgun on hanging on the wall. "
                     + "\nAs u step in the room, a ghost appears shouting "
-                    + modes(BOLD, BG_YELLOW, FG_BLACK) + "THIS IS MY ROOM!" + RESET
+                    + modes(BOLD, BG_YELLOW, FG_BLACK) + "THIS IS MY ROOM!" + reset
                     + "\nYou get pushed out of the room, back into the office.\n";
         } else {
             return "The room is dusty and all the furniture is covered in white sheets. "
-                    + "\nThere's a smiling " + modes(BG_BLUE) + "GHOST" + RESET + " handing you a sawed-off double barrel shotgun.";
+                    + "\nThere's a smiling " + modes(BG_BLUE) + "GHOST" + reset + " handing you a sawed-off double barrel shotgun.";
         }
     }
 

@@ -5,7 +5,6 @@ public class Escapes {
 
     private static boolean enabled = false;
 
-    public static final String RESET = modes(0);
     public static final int BOLD = 1;
     public static final int UNDERSCORE = 4;
     public static final int BLINK = 5;
@@ -50,6 +49,7 @@ public class Escapes {
 
     /* Shorthand */
     public static String toScary = "";
+    public static String reset = "";
 
     public static String modes(int... modes) {
         if (!enabled) return "";
@@ -63,5 +63,6 @@ public class Escapes {
     public static void setEnabled(boolean enabled) {
         Escapes.enabled = enabled;
         toScary = modes(BOLD, UNDERSCORE, BLINK, FG_RED);
+        reset = modes(0);
     }
 }

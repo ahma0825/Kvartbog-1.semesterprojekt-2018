@@ -16,7 +16,7 @@ public class Parser {
         String word1 = null;
         String word2 = null;
 
-        System.out.print(Escapes.modes(Escapes.FG_GREEN, Escapes.BOLD) + ">" + Escapes.RESET + " ");
+        System.out.print(Escapes.modes(Escapes.FG_GREEN, Escapes.BOLD) + ">" + Escapes.reset + " ");
 
         inputLine = reader.nextLine().trim();
 
