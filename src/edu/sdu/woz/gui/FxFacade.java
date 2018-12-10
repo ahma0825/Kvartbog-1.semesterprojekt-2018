@@ -137,11 +137,11 @@ public class FxFacade implements Initializable, IFacade {
     public void onGameOver(boolean won) {
         Alert alert;
         if (won) {
-            alert = new Alert(Alert.AlertType.INFORMATION, "Guess what?");
-            alert.setTitle("You win!");
+            alert = new Alert(Alert.AlertType.INFORMATION, "You win!");
+            alert.setHeaderText("Guess what?");
         } else {
-            alert = new Alert(Alert.AlertType.ERROR, "What misfortune");
-            alert.setTitle("You are dead");
+            alert = new Alert(Alert.AlertType.ERROR, "You are dead");
+            alert.setHeaderText("Such misfortune");
         }
         alert.setOnCloseRequest(__ -> System.exit(0));
         alert.show();
