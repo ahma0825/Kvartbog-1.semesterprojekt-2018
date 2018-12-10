@@ -9,7 +9,7 @@ import java.awt.*;
 import static edu.sdu.woz.Direction.WEST;
 import static edu.sdu.woz.Item.KEY;
 import static edu.sdu.woz.Item.SHOTGUN;
-import static edu.sdu.woz.text.Escapes.GO_SCARY;
+import static edu.sdu.woz.text.Escapes.toScary;
 import static edu.sdu.woz.text.Escapes.RESET;
 
 public class EntranceRoom extends Room {
@@ -27,12 +27,12 @@ public class EntranceRoom extends Room {
                 werewolfKilled = true;
                 return "You enter the grand entrance there's something different."
                         + "Two yellow glowing eyes appear in the dark corner of the room."
-                        + "\nSuddenly a " + GO_SCARY + "WEREWOLF " + RESET + "jumps out at you!"
+                        + "\nSuddenly a " + toScary + "WEREWOLF " + RESET + "jumps out at you!"
                         + "\nYou whip out the trusted double barrel shotgun and blow it to smithereens.";
             } else if (game.getInventory().contains(KEY) && !game.getInventory().contains(SHOTGUN)) {
                 return "You enter the grand entrance there's something different."
                         + "\nTwo yellow glowing eyes appear in the dark corner of the room."
-                        + "\nSuddenly a " + GO_SCARY + "WEREWOLF " + RESET + "jumps out at you!"
+                        + "\nSuddenly a " + toScary + "WEREWOLF " + RESET + "jumps out at you!"
                         + "\nIt rips you apart!";
             } else {
                 return "You find yourself standing in a grand entrance."

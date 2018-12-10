@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import static edu.sdu.woz.Direction.*;
-import static edu.sdu.woz.text.Escapes.GO_SCARY;
+import static edu.sdu.woz.text.Escapes.toScary;
 import static edu.sdu.woz.text.Escapes.RESET;
 
 public class Game {
@@ -29,7 +29,7 @@ public class Game {
         // Dining Room
         putRoom(new BasicRoom(this, new Point(1, 0),
                 "You enter a dining hall, there's a feast going on. " +
-                        "\nAll the participants are " + GO_SCARY + "SKELETONS!" + RESET + "\nThere's a trapdoor leading down to a basement."
+                        "\nAll the participants are " + toScary + "SKELETONS!" + RESET + "\nThere's a trapdoor leading down to a basement."
         ).setDirections(NORTH, EAST, WEST, DOWN));
         // Room
         putRoom(new BasicRoom(this, new Point(2, 0), "This room is empty.").setDirections(EAST, SOUTH, WEST));
@@ -48,7 +48,7 @@ public class Game {
                 + "\nThe bathtub is filled with blood. "
                 + "\nThere’s a mirror. When you look at it. It shows the back of your head! ").setDirections(NORTH, EAST));
         // Darkroom~
-        putRoom(new BasicRoom(this, new Point(3, 1), GO_SCARY + "BATS" + RESET + " fly out as you enter and the room is dark, moist and covered in cobwebs.").setDirections(SOUTH, WEST));
+        putRoom(new BasicRoom(this, new Point(3, 1), toScary + "BATS" + RESET + " fly out as you enter and the room is dark, moist and covered in cobwebs.").setDirections(SOUTH, WEST));
         // Ritualroom~
         putRoom(new RitualRoom(this, new Point(3, -1)).setDirections(NORTH, WEST));
 

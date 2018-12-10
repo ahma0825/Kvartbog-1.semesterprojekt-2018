@@ -17,6 +17,7 @@ public class TextFacade implements IFacade {
     private Game game = new Game(this);
 
     public static void main(String[] args) {
+        Escapes.setEnabled(true);
         TextFacade tf = new TextFacade();
         tf.play();
     }

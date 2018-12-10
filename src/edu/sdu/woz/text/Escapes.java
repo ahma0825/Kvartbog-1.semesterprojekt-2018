@@ -48,16 +48,20 @@ public class Escapes {
     public static final int BG_BR_CYAN = 106;
     public static final int BG_BR_WHITE = 107;
 
-    /* Shorthands */
-    public static final String GO_BOLD = modes(BOLD);
-    public static final String GO_RED = modes(BOLD);
-    public static final String GO_SCARY = modes(BOLD, UNDERSCORE, BLINK, FG_RED);
+    /* Shorthand */
+    public static String toScary = "";
 
     public static String modes(int... modes) {
+        if (!enabled) return "";
         StringBuilder inner = new StringBuilder();
         for (int flag : modes) {
             inner.append(";").append(flag);
         }
         return "\u001B[" + inner.toString().substring(1) + "m";
+    }
+
+    public static void setEnabled(boolean enabled) {
+        Escapes.enabled = enabled;
+        toScary = modes(BOLD, UNDERSCORE, BLINK, FG_RED);
     }
 }

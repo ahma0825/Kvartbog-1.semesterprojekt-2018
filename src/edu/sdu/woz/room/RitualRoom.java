@@ -5,7 +5,7 @@ import edu.sdu.woz.Item;
 
 import java.awt.*;
 
-import static edu.sdu.woz.text.Escapes.GO_SCARY;
+import static edu.sdu.woz.text.Escapes.toScary;
 
 public class RitualRoom extends Room {
 
@@ -31,7 +31,7 @@ public class RitualRoom extends Room {
         if (!game.isIgnited() && !items.contains(Item.LIGHTER)) {
             game.setIgnited(true);
             game.getInventory().remove(Item.LIGHTER);
-            return "You flick the lighter and throw it at the body setting it" + GO_SCARY + " ABLAZE!";
+            return "You flick the lighter and throw it at the body setting it" + toScary + " ABLAZE!";
         } else {
             return "You don't have a lighter.";
         }
