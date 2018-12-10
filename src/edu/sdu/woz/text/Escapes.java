@@ -3,6 +3,8 @@ package edu.sdu.woz.text;
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class Escapes {
 
+    private static boolean enabled = false;
+
     public static final String RESET = modes(0);
     public static final int BOLD = 1;
     public static final int UNDERSCORE = 4;

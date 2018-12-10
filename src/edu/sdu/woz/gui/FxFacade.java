@@ -134,9 +134,15 @@ public class FxFacade implements Initializable, IFacade {
     }
 
     @Override
-    public void onGameOver() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION, "You are dead");
-        alert.setResizable(false);
+    public void onGameOver(boolean won) {
+        Alert alert;
+        if (won) {
+            alert = new Alert(Alert.AlertType.INFORMATION, "Guess what?");
+            alert.setTitle("You win!");
+        } else {
+            alert = new Alert(Alert.AlertType.ERROR, "What misfortune");
+            alert.setTitle("You are dead");
+        }
         alert.setOnCloseRequest(__ -> System.exit(0));
         alert.show();
     }

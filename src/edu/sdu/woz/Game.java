@@ -108,7 +108,7 @@ public class Game {
         return room;
     }
 
-    public void gameOver() {
-        facade.onGameOver();
+    public void gameOver(boolean won) {
+        facade.onGameOver(won);
     }
 }

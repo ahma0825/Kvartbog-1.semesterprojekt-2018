@@ -60,6 +60,6 @@ public class RoomMapper implements IFacade {
     }
 
     @Override
-    public void onGameOver() {
+    public void onGameOver(boolean won) {
     }
 }

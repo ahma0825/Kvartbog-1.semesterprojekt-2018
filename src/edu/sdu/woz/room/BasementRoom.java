@@ -46,7 +46,7 @@ public class BasementRoom extends Room {
     @Override
     public void afterEnter() {
         if (!game.getInventory().contains(Item.GARLIC)) {
-            game.gameOver();
+            game.gameOver(false);
         }
     }
 

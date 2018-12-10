@@ -47,7 +47,7 @@ public class EntranceRoom extends Room {
     @Override
     public void afterEnter() {
         if (!game.getInventory().contains(Item.SHOTGUN) && game.getInventory().contains(KEY)) {
-            game.gameOver();
+            game.gameOver(false);
         }
     }
 

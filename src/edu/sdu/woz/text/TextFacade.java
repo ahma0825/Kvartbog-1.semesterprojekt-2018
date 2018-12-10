@@ -181,7 +181,7 @@ public class TextFacade implements IFacade {
     }
 
     @Override
-    public void onGameOver() {
+    public void onGameOver(boolean won) {
         println("GAME OVER");
         System.exit(0);
     }

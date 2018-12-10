@@ -17,7 +17,7 @@ public class EndRoom extends Room {
 
     @Override
     public void afterEnter() {
-        game.gameOver();
+        game.gameOver(true);
     }
 
 }
