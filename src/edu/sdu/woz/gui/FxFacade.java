@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.sdu.woz.gui;
 
 import edu.sdu.woz.Direction;
@@ -26,6 +21,7 @@ import java.util.ResourceBundle;
 
 @SuppressWarnings("unused")
 public class FxFacade implements Initializable, IFacade {
+
     private Game game = null;
     private SpecialButtonController specialButtonController = null;
 
@@ -51,8 +47,8 @@ public class FxFacade implements Initializable, IFacade {
     private ImageView item3;
     @FXML
     private ImageView item4;
-    private List<ImageView> availableSlots = new ArrayList<>();
-    
+    private final List<ImageView> availableSlots = new ArrayList<>();
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         game = new Game(this);
@@ -61,7 +57,7 @@ public class FxFacade implements Initializable, IFacade {
         availableSlots.add(item2);
         availableSlots.add(item3);
         availableSlots.add(item4);
-    }    
+    }
 
     @FXML
     private void onSpecial(ActionEvent event) {
@@ -103,25 +99,25 @@ public class FxFacade implements Initializable, IFacade {
     @Override
     public void onRoomEnter(Room room) {
         println(room.examine());
-        
+
         if (room.canGo(Direction.NORTH)) {
             goNorth.setDisable(false);
         } else {
             goNorth.setDisable(true);
         }
-        
+
         if (room.canGo(Direction.SOUTH)) {
             goSouth.setDisable(false);
         } else {
             goSouth.setDisable(true);
         }
-        
+
         if (room.canGo(Direction.WEST)) {
             goWest.setDisable(false);
         } else {
             goWest.setDisable(true);
         }
-        
+
         if (room.canGo(Direction.EAST)) {
             goEast.setDisable(false);
         } else {
@@ -150,7 +146,7 @@ public class FxFacade implements Initializable, IFacade {
     }
 
     private void println(String s) {
-        terminal.setText(terminal.getText() + s + "\n");
+        terminal.appendText(s + "\n");
     }
-    
+
 }
