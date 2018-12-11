@@ -272,3 +272,19 @@ Tilstede: Frederik, Jesper, Saq og Kim
 
 #### Referat
 Vi fik lavet videre på vores GUI, hvor vi fik lavet en lille omstrukturering af vores pakker, og vi arbejdede videre på at få vores inventory system til at fungere med billeder. Fra 12.00 til 13.00 tog vi til orientering om projektaflevering og eksamen i U110. Vi brugte resten af tiden tiden på at skrive videre på rapporten, især indledning og hovedtekst.
+
+## Logbog uge 50
+### Mandag 
+
+Sted: Ved Krogene
+
+Tidspunkt: 10:30 – 16:00
+
+Dagsorden: Nå til at programmet kan køres uden problemer
+
+Referent: Jesper
+
+Tilstede: Frederik, Jesper og Kim
+
+#### Referat
+Vi mødtes uden mulighed for at få et lokale, så vi samledes i TEK bygningen og fandt et sted at arbejde. I løbet af dagen fik vi skrevet videre på rapporten, mens de sidste fejl og mangler med koden blev fikset. Koden blev gjort færdig omkring kl. 14:15, hvorefter der blev lavet nogle tests af den. Resten af tiden blev brugt på at skrive på rapporten.
