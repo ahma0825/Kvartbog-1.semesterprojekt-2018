@@ -288,3 +288,18 @@ Tilstede: Frederik, Jesper og Kim
 
 #### Referat
 Vi mødtes uden mulighed for at få et lokale, så vi samledes i TEK bygningen og fandt et sted at arbejde. I løbet af dagen fik vi skrevet videre på rapporten, mens de sidste fejl og mangler med koden blev fikset. Koden blev gjort færdig omkring kl. 14:15, hvorefter der blev lavet nogle tests af den. Resten af tiden blev brugt på at skrive på rapporten.
+
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Aflevering af java projekt og arbejde på rapport
+
+Referent: Frederik
+
+Tilstede: Frederik, Jesper og Kim
+
+#### Referat
+Vi fik endeligt afleveret vores kildekode til SDU-Assignment. Arbejdet fortsætter på at skrive rapporten færdig. Vi har skrevet omkring 5 sider på rapporten i dag. 
