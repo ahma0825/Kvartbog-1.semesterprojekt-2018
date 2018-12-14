@@ -14,7 +14,7 @@ import java.util.List;
 public class TextFacade implements IFacade {
 
     private Parser parser = new Parser();
-    private Game game = new Game(this);
+    private Game game;
 
     public static void main(String[] args) {
         Escapes.setEnabled(true);
@@ -36,12 +36,11 @@ public class TextFacade implements IFacade {
     }
 
     private void play() {
-        //printWelcome();
-
         println(Escapes.modes(Escapes.FG_RED, Escapes.BLINK, Escapes.BOLD, Escapes.UNDERSCORE)
                 + "Welcome to the Manor Story" + Escapes.reset);
         println("Type \"dir\" for directions");
         println("Type \"help\" for more info");
+        game = new Game(this);
 
         //noinspection InfiniteLoopStatement
         while (true) {

@@ -12,7 +12,7 @@ public enum Direction {
 
     private final Point delta;
 
-    private Direction(Point delta) {
+    Direction(Point delta) {
         this.delta = delta;
     }
 

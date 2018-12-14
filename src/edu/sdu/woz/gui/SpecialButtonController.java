@@ -50,7 +50,6 @@ class SpecialButtonController {
             specialButton.setVisible(false);
             currentAction = null;
         }
-
     }
 
 }
