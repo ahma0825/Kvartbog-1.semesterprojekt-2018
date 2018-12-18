@@ -241,7 +241,7 @@ Vi startede op med at tale omkring hvordan vores GUI skulle se ud for vores proj
 
 ## Logbog uge 48
 
-### Tirsdag
+ ### Tirsdag
 Sted: Ø27-605-2
 
 Tidspunkt: 10:00 – 16:00
@@ -303,3 +303,20 @@ Tilstede: Frederik, Jesper og Kim
 
 #### Referat
 Vi fik endeligt afleveret vores kildekode til SDU-Assignment. Arbejdet fortsætter på at skrive rapporten færdig. Vi har skrevet omkring 5 sider på rapporten i dag. 
+
+## Logbog uge 51
+### Mandag 
+
+Sted: På en gang
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Arbejde på projektrapporten
+
+Referent: Saq
+
+Tilstede: Frederik, Jesper, Saq, Kim
+
+#### Referat
+Vi havde ikke noget lokale at mødes i og derfor mødtes vi ved TEK-trappen før vi fandt et sted at sidde på en gang. Vi manglede at skrive og rette i projektrapporten så vi satte os ned og gik alle i gang med at arbejde på forskellige ting som indledning, konklusion, diskussion osv. Formålet var bare at få arbejdet så meget som vi kunne i den tidsramme vi havde sat op. Vi fik snakket en del med hinanden omkring ting vi var usikre på og vi kom også på spørgsmål til vores vejleder Erik til næste vejledermøde som er næste dag.
+
