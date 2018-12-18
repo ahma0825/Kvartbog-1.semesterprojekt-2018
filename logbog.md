@@ -320,3 +320,18 @@ Tilstede: Frederik, Jesper, Saq, Kim
 #### Referat
 Vi havde ikke noget lokale at mødes i og derfor mødtes vi ved TEK-trappen før vi fandt et sted at sidde på en gang. Vi manglede at skrive og rette i projektrapporten så vi satte os ned og gik alle i gang med at arbejde på forskellige ting som indledning, konklusion, diskussion osv. Formålet var bare at få arbejdet så meget som vi kunne i den tidsramme vi havde sat op. Vi fik snakket en del med hinanden omkring ting vi var usikre på og vi kom også på spørgsmål til vores vejleder Erik til næste vejledermøde som er næste dag.
 
+## Logbog uge 51
+### Tirsdag 
+
+Sted: Ø27-605-2
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Gennemgå nogle spørgsmål til rapporten med Erik, lave videre på rapporten
+
+Referent: Kim
+
+Tilstede: Frederik, Jesper, Saq og Kim
+
+#### Referat
+Vi mødtes med Erik kl. 11 og gik igennem nogle spørgmål til kildehenvisninger, sporbarhed af begreber, resuméet og analysen af woz. Derefter arbejdede vi videre på rapporten, vi skrev hovedsageligt videre på indledningen, kildehenvisninger, perspektivering og afsnittet om tropes.
