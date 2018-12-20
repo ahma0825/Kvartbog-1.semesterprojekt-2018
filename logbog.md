@@ -340,7 +340,7 @@ Vi mødtes med Erik kl. 11 og gik igennem nogle spørgmål til kildehenvisninger
 
 Sted: Knoldene
 
-Tidspunkt: 10:00 – 16:00
+Tidspunkt: 10:00 – 13:30
 
 Dagsorden: Kontrol og aflevering
 
