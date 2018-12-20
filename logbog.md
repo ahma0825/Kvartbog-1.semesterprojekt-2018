@@ -335,3 +335,18 @@ Tilstede: Frederik, Jesper, Saq og Kim
 
 #### Referat
 Vi mødtes med Erik kl. 11 og gik igennem nogle spørgmål til kildehenvisninger, sporbarhed af begreber, resuméet og analysen af woz. Derefter arbejdede vi videre på rapporten, vi skrev hovedsageligt videre på indledningen, kildehenvisninger, perspektivering og afsnittet om tropes.
+
+### Torsdag 
+
+Sted: Knoldene
+
+Tidspunkt: 10:00 – 16:00
+
+Dagsorden: Kontrol og aflevering
+
+Referent: Frederik
+
+Tilstede: Frederik, Jesper, Saq, Ahmad og Kim
+
+#### Referat
+Vi er i gang med den endelige kontrol af rapporten, og skal til at aflevere rapporten i dag. 
